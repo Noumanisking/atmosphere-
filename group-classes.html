@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Classes - Atmosphere</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/group-classes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <svg class="logo" width="200" height="50" viewBox="0 0 200 50">
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#00ffcc" />
+                            <stop offset="100%" stop-color="#0099ff" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M30,10 C17.3,10 7,20.3 7,33 C7,45.7 17.3,56 30,56 C42.7,56 53,45.7 53,33 C53,20.3 42.7,10 30,10 Z M30,15 C40,15 48,23 48,33 C48,43 40,51 30,51 C20,51 12,43 12,33 C12,23 20,15 30,15 Z" transform="scale(0.6)" fill="url(#logo-gradient)"/>
+                    <path d="M65,33 L190,33 M65,25 L190,25 M65,41 L190,41" stroke="url(#logo-gradient)" stroke-width="2" stroke-linecap="round"/>
+                    <text x="65" y="35" font-family="Orbitron" font-size="18" font-weight="700" fill="white">ATMOSPHERE</text>
+                </svg>
+            </a>
+        </div>
+        
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="facilities.html"><i class="fas fa-dumbbell"></i> Facilities</a></li>
+                <li><a href="female-gym.html"><i class="fas fa-female"></i> Female Gym</a></li>
+                <li><a href="group-classes.html" class="active"><i class="fas fa-users"></i> Group Classes</a></li>
+                <li><a href="training.html"><i class="fas fa-running"></i> Training</a></li>
+                <li class="dropdown">
+                    <a href="social-media.html"><i class="fas fa-share-alt"></i> Social <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="social-media.html#events">Events</a>
+                        <a href="social-media.html#channels">Channels</a>
+                        <a href="social-media.html#blogs">Blogs</a>
+                    </div>
+                </li>
+                <li><a href="packages.html"><i class="fas fa-tags"></i> Packages</a></li>
+                <li><a href="contact-us.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="register.html" class="register-btn">Register Now</a></li>
+            </ul>
+        </nav>
+        
+        <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="facilities.html"><i class="fas fa-dumbbell"></i> Facilities</a></li>
+                <li><a href="female-gym.html"><i class="fas fa-female"></i> Female Gym</a></li>
+                <li><a href="group-classes.html" class="active"><i class="fas fa-users"></i> Group Classes</a></li>
+                <li><a href="training.html"><i class="fas fa-running"></i> Training</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)"><i class="fas fa-share-alt"></i> Social <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="social-media.html#events">Events</a>
+                        <a href="social-media.html#channels">Channels</a>
+                        <a href="social-media.html#blogs">Blogs</a>
+                    </div>
+                </li>
+                <li><a href="packages.html"><i class="fas fa-tags"></i> Packages</a></li>
+                <li><a href="contact-us.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="register.html" class="register-btn">Register Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-container">
+        <div class="hero-banner">
+            <div class="hero-slide" style="background-image: url('images/group-classes-hero.jpg');">
+                <div class="hero-content">
+                    <h1>Group <span class="gradient-text">Classes</span></h1>
+                    <p>Experience the energy of training together in our high-tech studios</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Overview -->
+    <section class="classes-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Experience <span class="gradient-text">Together</span></h2>
+                <div class="glow-line"></div>
+                <p>From high-intensity workouts to mind-body balance, our diverse range of classes caters to all fitness levels and goals</p>
+            </div>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <p>Our group classes combine cutting-edge technology with expert instruction to create immersive fitness experiences. With performance tracking displays, interactive lighting systems, and high-energy sound, our studios transform workouts into unforgettable experiences.</p>
+                    <p>All classes are led by certified instructors who bring their unique expertise and motivation to every session. Whether you're a beginner or an advanced athlete, our classes are designed to challenge you and help you achieve your fitness goals.</p>
+                    <a href="#timetable" class="neon-button">View Timetable</a>
+                </div>
+                <div class="overview-image">
+                    <img src="images/group-class-atmosphere.jpg" alt="Group Class Atmosphere">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Class Types -->
+    <section class="class-types-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="gradient-text">Classes</span></h2>
+                <div class="glow-line"></div>
+            </div>
+            
+            <div class="class-types-grid">
+                <div class="class-card">
+                    <div class="class-image">
+                        <img src="images/hiit-class.jpg" alt="HIIT Class">
+                        <div class="class-difficulty">
+                            <span class="difficulty advanced">Advanced</span>
+                        </div>
+                    </div>
+                    <div class="class-content">
+                        <h3>HIIT Ignite</h3>
+                        <p>High-intensity interval training with heart rate monitoring and performance tracking to maximize calorie burn and improve cardiovascular fitness.</p>
+                        <ul class="class-info">
+                            <li><i class="fas fa-clock"></i> 45 minutes</li>
+                            <li><i class="fas fa-fire"></i> 500-700 calories</li>
+                            <li><i class="fas fa-bolt"></i> High intensity</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="class-card">
+                    <div class="class-image">
+                        <img src="images/yoga-class.jpg" alt="Yoga Class">
+                        <div class="class-difficulty">
+                            <span class="difficulty all-levels">All Levels</span>
+                        </div>
+                    </div>
+                    <div class="class-content">
+                        <h3>Flow Yoga</h3>
+                        <p>A mind-body practice that combines flowing movements, breath control, and meditation in an ambient studio with adaptive lighting.</p>
+                        <ul class="class-info">
+                            <li><i class="fas fa-clock"></i> 60 minutes</li>
+                            <li><i class="fas fa-fire"></i> 200-300 calories</li>
+                            <li><i class="fas fa-bolt"></i> Low to moderate intensity</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="class-card">
+                    <div class="class-image">
+                        <img src="images/cycling-class.jpg" alt="Cycling Class">
+                        <div class="class-difficulty">
+                            <span class="difficulty intermediate">Intermediate</span>
+                        </div>
+                    </div>
+                    <div class="class-content">
+                        <h3>Cyber Cycle</h3>
+                        <p>An immersive cycling experience with virtual routes, performance metrics, and instructor-led intensity variations set to energizing music.</p>
+                        <ul class="class-info">
+                            <li><i class="fas fa-clock"></i> 45 minutes</li>
+                            <li><i class="fas fa-fire"></i> 400-600 calories</li>
+                            <li><i class="fas fa-bolt"></i> Moderate to high intensity</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="class-card">
+                    <div class="class-image">
+                        <img src="images/boxing-class.jpg" alt="Boxing Class">
+                        <div class="class-difficulty">
+                            <span class="difficulty intermediate">Intermediate</span>
+                        </div>
+                    </div>
+                    <div class="class-content">
+                        <h3>Power Boxing</h3>
+                        <p>A high-energy boxing workout combining technique, cardio, and strength training with punch tracking technology and impact metrics.</p>
+                        <ul class="class-info">
+                            <li><i class="fas fa-clock"></i> 50 minutes</li>
+                            <li><i class="fas fa-fire"></i> 450-650 calories</li>
+                            <li><i class="fas fa-bolt"></i> High intensity</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="class-card">
+                    <div class="class-image">
+                        <img src="images/strength-class.jpg" alt="Strength Class">
+                        <div class="class-difficulty">
+                            <span class="difficulty all-levels">All Levels</span>
+                        </div>
+                    </div>
+                    <div class="class-content">
+                        <h3>Core Strength</h3>
+                        <p>A full-body strength training class focusing on functional movements and core stability using weights, resistance bands, and bodyweight exercises.</p>
+                        <ul class="class-info">
+                            <li><i class="fas fa-clock"></i> 45 minutes</li>
+                            <li><i class="fas fa-fire"></i> 300-450 calories</li>
+                            <li><i class="fas fa-bolt"></i> Moderate intensity</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="class-card">
+                    <div class="class-image">
+                        <img src="images/dance-class.jpg" alt="Dance Class">
+                        <div class="class-difficulty">
+                            <span class="difficulty beginner">Beginner</span>
+                        </div>
+                    </div>
+                    <div class="class-content">
+                        <h3>Rhythm Fusion</h3>
+                        <p>A dance-based workout combining various styles with synchronized lighting effects and high-energy music for a fun, effective cardio session.</p>
+                        <ul class="class-info">
+                            <li><i class="fas fa-clock"></i> 55 minutes</li>
+                            <li><i class="fas fa-fire"></i> 350-550 calories</li>
+                            <li><i class="fas fa-bolt"></i> Moderate intensity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timetable Section -->
+    <section id="timetable" class="timetable-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Class <span class="gradient-text">Timetable</span></h2>
+                <div class="glow-line"></div>
+            </div>
+            
+            <div class="timetable-nav">
+                <button class="day-tab active" data-day="monday">Monday</button>
+                <button class="day-tab" data-day="tuesday">Tuesday</button>
+                <button class="day-tab" data-day="wednesday">Wednesday</button>
+                <button class="day-tab" data-day="thursday">Thursday</button>
+                <button class="day-tab" data-day="friday">Friday</button>
+                <button class="day-tab" data-day="saturday">Saturday</button>
+                <button class="day-tab" data-day="sunday">Sunday</button>
+            </div>
+            
+            <div class="timetable-content">
+                <div class="timetable-day active" data-day="monday">
+                    <div class="timetable-grid">
+                        <div class="time-slot">
+                            <div class="time">06:00 - 07:00</div>
+                            <div class="class-info hiit">
+                                <h4>HIIT Ignite</h4>
+                                <p>Sarah Ahmed</p>
+                            </div>
+                        </div>
+                        <div class="time-slot">
+                            <div class="time">08:00 - 09:00</div>
+                            <div class="class-info yoga">
+                                <h4>Flow Yoga</h4>
+                                <p>Aisha Khan</p>
+                            </div>
+                        </div>
+                        <div class="time-slot">
+                            <div class="time">10:00 - 11:00</div>
+                            <div class="class-info strength">
+                                <h4>Core Strength</h4>
+                                <p>Tariq Jamil</p>
+                            </div>
+                        </div>
+                        <div class="time-slot">
+                            <div class="time">17:00 - 18:00</div>
+                            <div class="class-info cycling">
+                                <h4>Cyber Cycle</h4>
+                                <p>Farhan Ali</p>
+                            </div>
+                        </div>
+                        <div class="time-slot">
+                            <div class="time">19:00 - 20:00</div>
+                            <div class="class-info boxing">
+                                <h4>Power Boxing</h4>
+                                <p>Hassan Khan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timetable-day" data-day="tuesday">
+                    <div class="timetable-grid">
+                        <div class="time-slot">
+                            <div class="time">06:00 - 07:00</div>
+                            <div class="class-info cycling">
+                                <h4>Cyber Cycle</h4>
+                                <p>Farhan Ali</p>
+                            </div>
+                        </div>
+                        <div class="time-slot">
+                            <div class="time">09:00 - 10:00</div>
+                            <div class="class-info strength">
+                                <h4>Core Strength</h4>
+                                <p>Zara Hussain</p>
+                            </div>
+                        </div>
+                        <div class="time-slot">
+                            <div class="time">11:00 - 12:00</div>
+                            <div class="class-info dance">
+                                <h4>Rhythm Fusion</h4>
+                                <p>Fatima Malik</p>
+                            </div>
+                        </div>
+                        <div class="time-slot">
+                            <div class="time">18:00 - 19:00</div>
+                            <div class="class-info yoga">
+                                <h4>Flow Yoga</h4>
+                                <p>Aisha Khan</p>
+                            </div>
+                        </div>
+                        <div class="time-slot">
+                            <div class="time">20:00 - 21:00</div>
+                            <div class="class-info hiit">
+                                <h4>HIIT Ignite</h4>
+                                <p>Sarah Ahmed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional days would follow the same pattern -->
+                <div class="timetable-day" data-day="wednesday">
+                    <!-- Wednesday schedule content -->
+                </div>
+                <div class="timetable-day" data-day="thursday">
+                    <!-- Thursday schedule content -->
+                </div>
+                <div class="timetable-day" data-day="friday">
+                    <!-- Friday schedule content -->
+                </div>
+                <div class="timetable-day" data-day="saturday">
+                    <!-- Saturday schedule content -->
+                </div>
+                <div class="timetable-day" data-day="sunday">
+                    <!-- Sunday schedule content -->
+                </div>
+            </div>
+            
+            <div class="timetable-note">
+                <p><i class="fas fa-info-circle"></i> To book a class, you must register at least 2 hours in advance via our mobile app or at the reception.</p>
+                <a href="#" class="download-timetable">
+                    <i class="fas fa-download"></i> Download Full Timetable
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructor Showcase -->
+    <section class="instructors-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Expert <span class="gradient-text">Instructors</span></h2>
+                <div class="glow-line"></div>
+            </div>
+            
+            <div class="instructors-grid">
+                <div class="instructor-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/instructor1.jpg" alt="Sarah Ahmed">
+                            <div class="instructor-name">
+                                <h3>Sarah Ahmed</h3>
+                                <p>HIIT & Cycling</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Sarah Ahmed</h3>
+                            <p class="instructor-bio">International fitness presenter with 10+ years of experience specializing in high-intensity training and performance cycling.</p>
+                            <div class="instructor-certifications">
+                                <p><strong>Certifications:</strong></p>
+                                <ul>
+                                    <li>ACE Certified Personal Trainer</li>
+                                    <li>Schwinn Cycling Instructor</li>
+                                    <li>TRX Suspension Training</li>
+                                </ul>
+                            </div>
+                            <div class="instructor-classes">
+                                <p><strong>Classes:</strong> HIIT Ignite, Cyber Cycle</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="instructor-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/instructor2.jpg" alt="Tariq Jamil">
+                            <div class="instructor-name">
+                                <h3>Tariq Jamil</h3>
+                                <p>Strength & Boxing</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Tariq Jamil</h3>
+                            <p class="instructor-bio">Former professional boxer with expertise in strength training, functional fitness, and boxing techniques.</p>
+                            <div class="instructor-certifications">
+                                <p><strong>Certifications:</strong></p>
+                                <ul>
+                                    <li>NASM Certified Personal Trainer</li>
+                                    <li>USA Boxing Coach</li>
+                                    <li>Functional Training Specialist</li>
+                                </ul>
+                            </div>
+                            <div class="instructor-classes">
+                                <p><strong>Classes:</strong> Core Strength, Power Boxing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="instructor-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/instructor3.jpg" alt="Aisha Khan">
+                            <div class="instructor-name">
+                                <h3>Aisha Khan</h3>
+                                <p>Yoga & Flexibility</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Aisha Khan</h3>
+                            <p class="instructor-bio">Internationally certified yoga instructor with 12+ years of experience in various yoga disciplines and mindfulness training.</p>
+                            <div class="instructor-certifications">
+                                <p><strong>Certifications:</strong></p>
+                                <ul>
+                                    <li>500-Hour Yoga Alliance Certified</li>
+                                    <li>Aerial Yoga Specialist</li>
+                                    <li>Meditation & Mindfulness Coach</li>
+                                </ul>
+                            </div>
+                            <div class="instructor-classes">
+                                <p><strong>Classes:</strong> Flow Yoga, Aerial Yoga</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="instructor-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/instructor4.jpg" alt="Fatima Malik">
+                            <div class="instructor-name">
+                                <h3>Fatima Malik</h3>
+                                <p>Dance & Cardio</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Fatima Malik</h3>
+                            <p class="instructor-bio">Professional dancer and choreographer bringing creativity and high energy to cardio-based dance fitness classes.</p>
+                            <div class="instructor-certifications">
+                                <p><strong>Certifications:</strong></p>
+                                <ul>
+                                    <li>International Dance Fitness Certification</li>
+                                    <li>Cardio Dance Specialist</li>
+                                    <li>ACE Group Fitness Instructor</li>
+                                </ul>
+                            </div>
+                            <div class="instructor-classes">
+                                <p><strong>Classes:</strong> Rhythm Fusion, Cardio Dance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to <span class="gradient-text">Join the Energy</span>?</h2>
+                <p>Experience the power of group motivation and expert instruction</p>
+                <div class="cta-buttons">
+                    <a href="register.html" class="neon-button">Register Now</a>
+                    <a href="contact-us.html" class="outline-button">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <div class="footer-logo">
+                            <svg class="logo" width="150" height="40" viewBox="0 0 200 50">
+                                <defs>
+                                    <linearGradient id="footer-logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#00ffcc" />
+                                        <stop offset="100%" stop-color="#0099ff" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="M30,10 C17.3,10 7,20.3 7,33 C7,45.7 17.3,56 30,56 C42.7,56 53,45.7 53,33 C53,20.3 42.7,10 30,10 Z M30,15 C40,15 48,23 48,33 C48,43 40,51 30,51 C20,51 12,43 12,33 C12,23 20,15 30,15 Z" transform="scale(0.6)" fill="url(#footer-logo-gradient)"/>
+                                <path d="M65,33 L190,33 M65,25 L190,25 M65,41 L190,41" stroke="url(#footer-logo-gradient)" stroke-width="2" stroke-linecap="round"/>
+                                <text x="65" y="35" font-family="Orbitron" font-size="18" font-weight="700" fill="white">ATMOSPHERE</text>
+                            </svg>
+                        </div>
+                        <p>Redefining fitness experiences with cutting-edge technology and expert training methodologies.</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="facilities.html">Facilities</a></li>
+                            <li><a href="female-gym.html">Female Gym</a></li>
+                            <li><a href="group-classes.html">Group Classes</a></li>
+                            <li><a href="training.html">Training</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>More Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="social-media.html">Social Media</a></li>
+                            <li><a href="packages.html">Packages</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                            <li><a href="register.html">Register Now</a></li>
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Info</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-envelope"></i> info@atmosphere.com.pk</li>
+                            <li><i class="fas fa-phone"></i> (021) 32400201</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Al Nadi Al Burhani Academy, Old Queens Road, Karachi</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Phase-2, Roof Top, D-11, inside The North Walk Mall, Karachi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 Atmosphere. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,456 @@
+/* Classes Overview */
+.classes-overview {
+  padding-bottom: 0;
+}
+
+.overview-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.overview-text {
+  flex: 1 1 400px;
+}
+
+.overview-text p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.overview-image {
+  flex: 1 1 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.overview-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(0, 255, 204, 0.2), rgba(0, 153, 255, 0.2));
+  z-index: 1;
+}
+
+.overview-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.overview-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Class Types Section */
+.class-types-section {
+  background-color: rgba(15, 15, 25, 0.5);
+}
+
+.class-types-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.class-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.class-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.class-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.class-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.class-card:hover .class-image img {
+  transform: scale(1.1);
+}
+
+.class-difficulty {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1;
+}
+
+.difficulty {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.difficulty.beginner {
+  background-color: rgba(0, 230, 118, 0.2);
+  color: var(--success);
+  border: 1px solid var(--success);
+}
+
+.difficulty.intermediate {
+  background-color: rgba(255, 193, 7, 0.2);
+  color: var(--warning);
+  border: 1px solid var(--warning);
+}
+
+.difficulty.advanced {
+  background-color: rgba(255, 61, 113, 0.2);
+  color: var(--danger);
+  border: 1px solid var(--danger);
+}
+
+.difficulty.all-levels {
+  background-color: rgba(0, 153, 255, 0.2);
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+}
+
+.class-content {
+  padding: 1.5rem;
+}
+
+.class-content h3 {
+  margin-bottom: 1rem;
+}
+
+.class-content p {
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.class-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.class-info li {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.class-info li i {
+  margin-right: 0.5rem;
+  color: var(--primary);
+}
+
+/* Timetable Section */
+.timetable-section {
+  padding-top: 5rem;
+}
+
+.timetable-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.day-tab {
+  padding: 0.8rem 1.5rem;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.day-tab:hover,
+.day-tab.active {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  border-color: transparent;
+  color: var(--dark);
+}
+
+.timetable-content {
+  margin-bottom: 2rem;
+}
+
+.timetable-day {
+  display: none;
+}
+
+.timetable-day.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+.timetable-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.time-slot {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.time {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.class-info {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 5px;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.class-info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+}
+
+.class-info.hiit::before {
+  background-color: var(--danger);
+}
+
+.class-info.yoga::before {
+  background-color: var(--success);
+}
+
+.class-info.cycling::before {
+  background-color: var(--secondary);
+}
+
+.class-info.boxing::before {
+  background-color: var(--warning);
+}
+
+.class-info.strength::before {
+  background-color: var(--primary);
+}
+
+.class-info.dance::before {
+  background-color: var(--accent);
+}
+
+.class-info h4 {
+  margin-bottom: 0.3rem;
+}
+
+.class-info p {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+.timetable-note {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.timetable-note p {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.timetable-note p i {
+  color: var(--primary);
+  margin-right: 0.5rem;
+}
+
+.download-timetable {
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.download-timetable i {
+  margin-right: 0.5rem;
+}
+
+.download-timetable:hover {
+  color: white;
+}
+
+/* Instructors Section */
+.instructors-section {
+  padding-top: 5rem;
+}
+
+.instructors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.instructor-card {
+  height: 400px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.instructor-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.flip-card-front {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.instructor-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  text-align: left;
+}
+
+.instructor-name h3 {
+  margin-bottom: 0.3rem;
+}
+
+.instructor-name p {
+  margin-bottom: 0;
+  color: var(--primary);
+}
+
+.flip-card-back {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  transform: rotateY(180deg);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.flip-card-back h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.instructor-bio {
+  margin-bottom: 1.5rem;
+}
+
+.instructor-certifications {
+  margin-bottom: 1.5rem;
+}
+
+.instructor-certifications ul {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.instructor-certifications li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.instructor-certifications li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--primary);
+}
+
+.instructor-classes {
+  margin-top: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .overview-content {
+    flex-direction: column;
+  }
+
+  .class-types-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .time-slot {
+    grid-template-columns: 1fr;
+  }
+
+  .timetable-note {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

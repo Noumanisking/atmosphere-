@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Female Gym - Atmosphere</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/female-gym.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <svg class="logo" width="200" height="50" viewBox="0 0 200 50">
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#00ffcc" />
+                            <stop offset="100%" stop-color="#0099ff" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M30,10 C17.3,10 7,20.3 7,33 C7,45.7 17.3,56 30,56 C42.7,56 53,45.7 53,33 C53,20.3 42.7,10 30,10 Z M30,15 C40,15 48,23 48,33 C48,43 40,51 30,51 C20,51 12,43 12,33 C12,23 20,15 30,15 Z" transform="scale(0.6)" fill="url(#logo-gradient)"/>
+                    <path d="M65,33 L190,33 M65,25 L190,25 M65,41 L190,41" stroke="url(#logo-gradient)" stroke-width="2" stroke-linecap="round"/>
+                    <text x="65" y="35" font-family="Orbitron" font-size="18" font-weight="700" fill="white">ATMOSPHERE</text>
+                </svg>
+            </a>
+        </div>
+        
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="facilities.html"><i class="fas fa-dumbbell"></i> Facilities</a></li>
+                <li><a href="female-gym.html" class="active"><i class="fas fa-female"></i> Female Gym</a></li>
+                <li><a href="group-classes.html"><i class="fas fa-users"></i> Group Classes</a></li>
+                <li><a href="training.html"><i class="fas fa-running"></i> Training</a></li>
+                <li class="dropdown">
+                    <a href="social-media.html"><i class="fas fa-share-alt"></i> Social <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="social-media.html#events">Events</a>
+                        <a href="social-media.html#channels">Channels</a>
+                        <a href="social-media.html#blogs">Blogs</a>
+                    </div>
+                </li>
+                <li><a href="packages.html"><i class="fas fa-tags"></i> Packages</a></li>
+                <li><a href="contact-us.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="register.html" class="register-btn">Register Now</a></li>
+            </ul>
+        </nav>
+        
+        <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="facilities.html"><i class="fas fa-dumbbell"></i> Facilities</a></li>
+                <li><a href="female-gym.html" class="active"><i class="fas fa-female"></i> Female Gym</a></li>
+                <li><a href="group-classes.html"><i class="fas fa-users"></i> Group Classes</a></li>
+                <li><a href="training.html"><i class="fas fa-running"></i> Training</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)"><i class="fas fa-share-alt"></i> Social <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="social-media.html#events">Events</a>
+                        <a href="social-media.html#channels">Channels</a>
+                        <a href="social-media.html#blogs">Blogs</a>
+                    </div>
+                </li>
+                <li><a href="packages.html"><i class="fas fa-tags"></i> Packages</a></li>
+                <li><a href="contact-us.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="register.html" class="register-btn">Register Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-container">
+        <div class="hero-banner">
+            <div class="hero-slide" style="background-image: url('images/female-gym-hero.jpg');">
+                <div class="hero-content">
+                    <h1>Female <span class="gradient-text">Exclusive</span> Gym</h1>
+                    <p>A dedicated fitness space designed for women, by women</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Female Gym Overview -->
+    <section class="female-gym-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Our <span class="gradient-text">Female Gym</span></h2>
+                <div class="glow-line"></div>
+                <p>A safe, supportive, and empowering environment exclusively for women</p>
+            </div>
+            <div class="overview-content">
+                <div class="overview-image">
+                    <img src="images/female-gym-interior.jpg" alt="Female Gym Interior">
+                </div>
+                <div class="overview-text">
+                    <p>Our female-exclusive gym space provides a comfortable environment where women can focus on their fitness goals without distractions. With state-of-the-art equipment, specialized female trainers, and tailored programs, we've created a space that addresses the unique fitness needs and preferences of women.</p>
+                    <div class="hours-card">
+                        <h3>Special Hours</h3>
+                        <ul>
+                            <li><span>Monday - Saturday:</span> 7:00 AM – 9:00 PM</li>
+                            <li><span>Sunday:</span> 10:00 AM – 5:00 PM</li>
+                        </ul>
+                    </div>
+                    <a href="register.html" class="neon-button">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Exclusive <span class="gradient-text">Features</span></h2>
+                <div class="glow-line"></div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Privacy & Security</h3>
+                    <p>Completely private space with secure access and female staff only</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Specialized Equipment</h3>
+                    <p>Equipment and machines specifically designed for female physiology</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Female Trainers</h3>
+                    <p>Experienced female trainers with expertise in women's fitness</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Women-Only Classes</h3>
+                    <p>Specialized group classes designed for women of all fitness levels</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Childcare Area</h3>
+                    <p>Supervised childcare area to make your workout hassle-free</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Women's Changing Areas</h3>
+                    <p>Luxurious changing rooms with private showers and vanity stations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Female Trainers -->
+    <section class="trainers-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet Our <span class="gradient-text">Female Trainers</span></h2>
+                <div class="glow-line"></div>
+            </div>
+            
+            <div class="trainers-grid">
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="images/female-trainer1.jpg" alt="Trainer Aisha Khan">
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Aisha Khan</h3>
+                        <p class="trainer-role">Strength & Conditioning</p>
+                        <p class="trainer-desc">Specializing in strength training and body transformation for women of all fitness levels.</p>
+                        <div class="trainer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="images/female-trainer2.jpg" alt="Trainer Sarah Ahmed">
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Sarah Ahmed</h3>
+                        <p class="trainer-role">Yoga & Flexibility</p>
+                        <p class="trainer-desc">Expert in yoga, meditation, and flexibility training with 10+ years of experience.</p>
+                        <div class="trainer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="images/female-trainer3.jpg" alt="Trainer Fatima Malik">
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Fatima Malik</h3>
+                        <p class="trainer-role">Cardio & HIIT</p>
+                        <p class="trainer-desc">Specializes in high-intensity interval training and cardio-based workouts for weight loss.</p>
+                        <div class="trainer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="images/female-trainer4.jpg" alt="Trainer Zara Hussain">
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Zara Hussain</h3>
+                        <p class="trainer-role">Pre/Post Natal Fitness</p>
+                        <p class="trainer-desc">Certified pre and post-natal fitness expert helping women stay fit during and after pregnancy.</p>
+                        <div class="trainer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Programs -->
+    <section class="programs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Women's <span class="gradient-text">Programs</span></h2>
+                <div class="glow-line"></div>
+            </div>
+            
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-header">
+                        <div class="program-icon">
+                            <i class="fas fa-venus"></i>
+                        </div>
+                        <h3>Body Confidence</h3>
+                    </div>
+                    <div class="program-content">
+                        <p>A comprehensive 8-week program designed to help women build strength, confidence, and a healthy relationship with their bodies.</p>
+                        <ul>
+                            <li>Customized training plans</li>
+                            <li>Nutrition guidance</li>
+                            <li>Weekly progress check-ins</li>
+                            <li>Community support</li>
+                        </ul>
+                        <a href="#" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-header">
+                        <div class="program-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Fit Mothers</h3>
+                    </div>
+                    <div class="program-content">
+                        <p>Designed for new mothers looking to safely return to fitness and rebuild strength after pregnancy.</p>
+                        <ul>
+                            <li>Post-natal safe exercises</li>
+                            <li>Diastasis recti focus</li>
+                            <li>Progressive strength building</li>
+                            <li>Childcare included</li>
+                        </ul>
+                        <a href="#" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-header">
+                        <div class="program-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Power Women</h3>
+                    </div>
+                    <div class="program-content">
+                        <p>An advanced strength training program for women looking to build serious muscle and power.</p>
+                        <ul>
+                            <li>Progressive overload training</li>
+                            <li>Technique workshops</li>
+                            <li>Performance nutrition</li>
+                            <li>Strength competitions</li>
+                        </ul>
+                        <a href="#" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Success <span class="gradient-text">Stories</span></h2>
+                <div class="glow-line"></div>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The women-only environment at Atmosphere gave me the confidence to start strength training. The female trainers understand our unique concerns and goals."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-female1.jpg" alt="Laila K.">
+                        <div class="author-info">
+                            <h4>Laila K.</h4>
+                            <p>Member since 2022</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a busy mother, the childcare area and flexible hours of the female gym have been a game-changer. I can finally prioritize my fitness without worry."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-female2.jpg" alt="Ayesha M.">
+                        <div class="author-info">
+                            <h4>Ayesha M.</h4>
+                            <p>Member since 2021</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The community of women at Atmosphere is incredibly supportive. I've not only transformed physically but found lifelong friends and workout partners."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-female3.jpg" alt="Nadia S.">
+                        <div class="author-info">
+                            <h4>Nadia S.</h4>
+                            <p>Member since 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-controls">
+                <button class="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Join Our <span class="gradient-text">Female Community</span></h2>
+                <p>Start your fitness journey in a supportive, women-only environment</p>
+                <div class="cta-buttons">
+                    <a href="register.html" class="neon-button">Register Now</a>
+                    <a href="contact-us.html" class="outline-button">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <div class="footer-logo">
+                            <svg class="logo" width="150" height="40" viewBox="0 0 200 50">
+                                <defs>
+                                    <linearGradient id="footer-logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#00ffcc" />
+                                        <stop offset="100%" stop-color="#0099ff" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="M30,10 C17.3,10 7,20.3 7,33 C7,45.7 17.3,56 30,56 C42.7,56 53,45.7 53,33 C53,20.3 42.7,10 30,10 Z M30,15 C40,15 48,23 48,33 C48,43 40,51 30,51 C20,51 12,43 12,33 C12,23 20,15 30,15 Z" transform="scale(0.6)" fill="url(#footer-logo-gradient)"/>
+                                <path d="M65,33 L190,33 M65,25 L190,25 M65,41 L190,41" stroke="url(#footer-logo-gradient)" stroke-width="2" stroke-linecap="round"/>
+                                <text x="65" y="35" font-family="Orbitron" font-size="18" font-weight="700" fill="white">ATMOSPHERE</text>
+                            </svg>
+                        </div>
+                        <p>Redefining fitness experiences with cutting-edge technology and expert training methodologies.</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="facilities.html">Facilities</a></li>
+                            <li><a href="female-gym.html">Female Gym</a></li>
+                            <li><a href="group-classes.html">Group Classes</a></li>
+                            <li><a href="training.html">Training</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>More Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="social-media.html">Social Media</a></li>
+                            <li><a href="packages.html">Packages</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                            <li><a href="register.html">Register Now</a></li>
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Info</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-envelope"></i> info@atmosphere.com.pk</li>
+                            <li><i class="fas fa-phone"></i> (021) 32400201</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Al Nadi Al Burhani Academy, Old Queens Road, Karachi</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Phase-2, Roof Top, D-11, inside The North Walk Mall, Karachi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 Atmosphere. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

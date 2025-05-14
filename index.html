@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atmosphere - Future of Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <svg class="logo" width="200" height="50" viewBox="0 0 200 50">
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#00ffcc" />
+                            <stop offset="100%" stop-color="#0099ff" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M30,10 C17.3,10 7,20.3 7,33 C7,45.7 17.3,56 30,56 C42.7,56 53,45.7 53,33 C53,20.3 42.7,10 30,10 Z M30,15 C40,15 48,23 48,33 C48,43 40,51 30,51 C20,51 12,43 12,33 C12,23 20,15 30,15 Z" transform="scale(0.6)" fill="url(#logo-gradient)"/>
+                    <path d="M65,33 L190,33 M65,25 L190,25 M65,41 L190,41" stroke="url(#logo-gradient)" stroke-width="2" stroke-linecap="round"/>
+                    <text x="65" y="35" font-family="Orbitron" font-size="18" font-weight="700" fill="white">ATMOSPHERE</text>
+                </svg>
+            </a>
+        </div>
+        
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="facilities.html"><i class="fas fa-dumbbell"></i> Facilities</a></li>
+                <li><a href="female-gym.html"><i class="fas fa-female"></i> Female Gym</a></li>
+                <li><a href="group-classes.html"><i class="fas fa-users"></i> Group Classes</a></li>
+                <li><a href="training.html"><i class="fas fa-running"></i> Training</a></li>
+                <li class="dropdown">
+                    <a href="social-media.html"><i class="fas fa-share-alt"></i> Social <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="social-media.html#events">Events</a>
+                        <a href="social-media.html#channels">Channels</a>
+                        <a href="social-media.html#blogs">Blogs</a>
+                    </div>
+                </li>
+                <li><a href="packages.html"><i class="fas fa-tags"></i> Packages</a></li>
+                <li><a href="contact-us.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="register.html" class="register-btn">Register Now</a></li>
+            </ul>
+        </nav>
+        
+        <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="facilities.html"><i class="fas fa-dumbbell"></i> Facilities</a></li>
+                <li><a href="female-gym.html"><i class="fas fa-female"></i> Female Gym</a></li>
+                <li><a href="group-classes.html"><i class="fas fa-users"></i> Group Classes</a></li>
+                <li><a href="training.html"><i class="fas fa-running"></i> Training</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)"><i class="fas fa-share-alt"></i> Social <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="social-media.html#events">Events</a>
+                        <a href="social-media.html#channels">Channels</a>
+                        <a href="social-media.html#blogs">Blogs</a>
+                    </div>
+                </li>
+                <li><a href="packages.html"><i class="fas fa-tags"></i> Packages</a></li>
+                <li><a href="contact-us.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="register.html" class="register-btn">Register Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-container">
+        <div class="hero-banner">
+            <div class="hero-slide" style="background-image: url('images/hero1.jpg');">
+                <div class="hero-content">
+                    <h1>Redefine Your <span class="gradient-text">Limits</span></h1>
+                    <p>Welcome to Atmosphere - Where Fitness Meets the Future</p>
+                    <a href="register.html" class="cta-button">Start Your Journey</a>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('images/hero2.jpg');">
+                <div class="hero-content">
+                    <h1>Train with <span class="gradient-text">Purpose</span></h1>
+                    <p>State-of-the-art facilities designed for performance</p>
+                    <a href="facilities.html" class="cta-button">Explore Facilities</a>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('images/hero3.jpg');">
+                <div class="hero-content">
+                    <h1>Transform Your <span class="gradient-text">Reality</span></h1>
+                    <p>Expert coaching and personalized training plans</p>
+                    <a href="training.html" class="cta-button">Meet Our Trainers</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About <span class="gradient-text">Atmosphere</span></h2>
+                <div class="glow-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Atmosphere is more than just a gym. It's a revolution in fitness that combines cutting-edge technology with expert training methodologies to create an environment where you can push beyond your limits.</p>
+                    <p>Founded with a vision to redefine fitness experiences, we offer state-of-the-art facilities, specialized training zones, and a community that inspires greatness.</p>
+                    <a href="facilities.html" class="neon-button">Discover More</a>
+                </div>
+                <div class="about-image">
+                    <img src="images/gym-interior.jpg" alt="Atmosphere Gym Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="gradient-text">Features</span></h2>
+                <div class="glow-line"></div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Premium Equipment</h3>
+                    <p>State-of-the-art machines and free weights from leading global brands.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Group Classes</h3>
+                    <p>Dynamic group workouts led by expert trainers for maximum motivation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-female"></i>
+                    </div>
+                    <h3>Female-Only Area</h3>
+                    <p>Dedicated spaces for women with specialized equipment and trainers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Personal Training</h3>
+                    <p>Customized workout plans tailored to your specific goals and needs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Health Monitoring</h3>
+                    <p>Advanced tracking systems to monitor your progress and vital statistics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Rejuvenation Zone</h3>
+                    <p>Recovery areas with advanced recovery equipment and techniques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to <span class="gradient-text">Transform</span>?</h2>
+                <p>Join Atmosphere today and experience the future of fitness</p>
+                <div class="cta-buttons">
+                    <a href="register.html" class="neon-button">Register Now</a>
+                    <a href="contact-us.html" class="outline-button">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Member <span class="gradient-text">Stories</span></h2>
+                <div class="glow-line"></div>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Atmosphere has completely transformed my approach to fitness. The futuristic environment and expert trainers keep me motivated every day."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial1.jpg" alt="Sarah K.">
+                        <div class="author-info">
+                            <h4>Sarah K.</h4>
+                            <p>Member since 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The female-only section at Atmosphere gave me the confidence to start my fitness journey. I've never felt more comfortable working out."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial2.jpg" alt="Aisha M.">
+                        <div class="author-info">
+                            <h4>Aisha M.</h4>
+                            <p>Member since 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As an athlete, I need specialized training. Atmosphere's trainers and facilities have helped me reach new heights in my performance."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial3.jpg" alt="Tariq J.">
+                        <div class="author-info">
+                            <h4>Tariq J.</h4>
+                            <p>Member since 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore <span class="gradient-text">Atmosphere</span></h2>
+                <div class="glow-line"></div>
+            </div>
+            <div class="quick-links-grid">
+                <a href="facilities.html" class="quick-link-card">
+                    <div class="quick-link-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Facilities</h3>
+                </a>
+                <a href="female-gym.html" class="quick-link-card">
+                    <div class="quick-link-icon">
+                        <i class="fas fa-female"></i>
+                    </div>
+                    <h3>Female Gym</h3>
+                </a>
+                <a href="group-classes.html" class="quick-link-card">
+                    <div class="quick-link-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Group Classes</h3>
+                </a>
+                <a href="training.html" class="quick-link-card">
+                    <div class="quick-link-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Training</h3>
+                </a>
+                <a href="social-media.html" class="quick-link-card">
+                    <div class="quick-link-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Social Media</h3>
+                </a>
+                <a href="packages.html" class="quick-link-card">
+                    <div class="quick-link-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3>Packages</h3>
+                </a>
+                <a href="contact-us.html" class="quick-link-card">
+                    <div class="quick-link-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Contact Us</h3>
+                </a>
+                <a href="register.html" class="quick-link-card highlight">
+                    <div class="quick-link-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3>Register Now</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <div class="footer-logo">
+                            <svg class="logo" width="150" height="40" viewBox="0 0 200 50">
+                                <defs>
+                                    <linearGradient id="footer-logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#00ffcc" />
+                                        <stop offset="100%" stop-color="#0099ff" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="M30,10 C17.3,10 7,20.3 7,33 C7,45.7 17.3,56 30,56 C42.7,56 53,45.7 53,33 C53,20.3 42.7,10 30,10 Z M30,15 C40,15 48,23 48,33 C48,43 40,51 30,51 C20,51 12,43 12,33 C12,23 20,15 30,15 Z" transform="scale(0.6)" fill="url(#footer-logo-gradient)"/>
+                                <path d="M65,33 L190,33 M65,25 L190,25 M65,41 L190,41" stroke="url(#footer-logo-gradient)" stroke-width="2" stroke-linecap="round"/>
+                                <text x="65" y="35" font-family="Orbitron" font-size="18" font-weight="700" fill="white">ATMOSPHERE</text>
+                            </svg>
+                        </div>
+                        <p>Redefining fitness experiences with cutting-edge technology and expert training methodologies.</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="facilities.html">Facilities</a></li>
+                            <li><a href="female-gym.html">Female Gym</a></li>
+                            <li><a href="group-classes.html">Group Classes</a></li>
+                            <li><a href="training.html">Training</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>More Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="social-media.html">Social Media</a></li>
+                            <li><a href="packages.html">Packages</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                            <li><a href="register.html">Register Now</a></li>
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Info</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-envelope"></i> info@atmosphere.com.pk</li>
+                            <li><i class="fas fa-phone"></i> (021) 32400201</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Al Nadi Al Burhani Academy, Old Queens Road, Karachi</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Phase-2, Roof Top, D-11, inside The North Walk Mall, Karachi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 Atmosphere. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

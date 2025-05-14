@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Atmosphere</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <svg class="logo" width="200" height="50" viewBox="0 0 200 50">
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#00ffcc" />
+                            <stop offset="100%" stop-color="#0099ff" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M30,10 C17.3,10 7,20.3 7,33 C7,45.7 17.3,56 30,56 C42.7,56 53,45.7 53,33 C53,20.3 42.7,10 30,10 Z M30,15 C40,15 48,23 48,33 C48,43 40,51 30,51 C20,51 12,43 12,33 C12,23 20,15 30,15 Z" transform="scale(0.6)" fill="url(#logo-gradient)"/>
+                    <path d="M65,33 L190,33 M65,25 L190,25 M65,41 L190,41" stroke="url(#logo-gradient)" stroke-width="2" stroke-linecap="round"/>
+                    <text x="65" y="35" font-family="Orbitron" font-size="18" font-weight="700" fill="white">ATMOSPHERE</text>
+                </svg>
+            </a>
+        </div>
+        
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="facilities.html"><i class="fas fa-dumbbell"></i> Facilities</a></li>
+                <li><a href="female-gym.html"><i class="fas fa-female"></i> Female Gym</a></li>
+                <li><a href="group-classes.html"><i class="fas fa-users"></i> Group Classes</a></li>
+                <li><a href="training.html"><i class="fas fa-running"></i> Training</a></li>
+                <li class="dropdown">
+                    <a href="social-media.html"><i class="fas fa-share-alt"></i> Social <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="social-media.html#events">Events</a>
+                        <a href="social-media.html#channels">Channels</a>
+                        <a href="social-media.html#blogs">Blogs</a>
+                    </div>
+                </li>
+                <li><a href="packages.html"><i class="fas fa-tags"></i> Packages</a></li>
+                <li><a href="contact-us.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="register.html" class="register-btn">Register Now</a></li>
+            </ul>
+        </nav>
+        
+        <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="facilities.html"><i class="fas fa-dumbbell"></i> Facilities</a></li>
+                <li><a href="female-gym.html"><i class="fas fa-female"></i> Female Gym</a></li>
+                <li><a href="group-classes.html"><i class="fas fa-users"></i> Group Classes</a></li>
+                <li><a href="training.html"><i class="fas fa-running"></i> Training</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)"><i class="fas fa-share-alt"></i> Social <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="social-media.html#events">Events</a>
+                        <a href="social-media.html#channels">Channels</a>
+                        <a href="social-media.html#blogs">Blogs</a>
+                    </div>
+                </li>
+                <li><a href="packages.html"><i class="fas fa-tags"></i> Packages</a></li>
+                <li><a href="contact-us.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="register.html" class="register-btn">Register Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Login Section -->
+    <section class="login-section">
+        <div class="container">
+            <div class="login-container">
+                <div class="login-image">
+                    <img src="images/login-image.jpg" alt="Atmosphere Gym">
+                    <div class="login-overlay">
+                        <div class="overlay-content">
+                            <h2>Welcome Back</h2>
+                            <p>Login to access your membership, book classes, and track your progress</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="login-form-container">
+                    <div class="login-header">
+                        <h1>Login to <span class="gradient-text">Atmosphere</span></h1>
+                        <p>Enter your credentials to access your account</p>
+                    </div>
+                    
+                    <form id="login-form" class="login-form">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="password" name="password" required>
+                                <button type="button" class="toggle-password">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-options">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="remember">
+                                <span class="checkbox-custom"></span>
+                                Remember me
+                            </label>
+                            
+                            <a href="#" class="forgot-password">Forgot Password?</a>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">
+                            <span>Login</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        
+                        <div class="social-login">
+                            <p>Or login with</p>
+                            <div class="social-buttons">
+                                <button type="button" class="social-button google">
+                                    <i class="fab fa-google"></i>
+                                    <span>Google</span>
+                                </button>
+                                <button type="button" class="social-button facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                    <span>Facebook</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-footer">
+                            <p>Don't have an account? <a href="register.html">Register here</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <div class="footer-logo">
+                            <svg class="logo" width="150" height="40" viewBox="0 0 200 50">
+                                <defs>
+                                    <linearGradient id="footer-logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#00ffcc" />
+                                        <stop offset="100%" stop-color="#0099ff" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="M30,10 C17.3,10 7,20.3 7,33 C7,45.7 17.3,56 30,56 C42.7,56 53,45.7 53,33 C53,20.3 42.7,10 30,10 Z M30,15 C40,15 48,23 48,33 C48,43 40,51 30,51 C20,51 12,43 12,33 C12,23 20,15 30,15 Z" transform="scale(0.6)" fill="url(#footer-logo-gradient)"/>
+                                <path d="M65,33 L190,33 M65,25 L190,25 M65,41 L190,41" stroke="url(#footer-logo-gradient)" stroke-width="2" stroke-linecap="round"/>
+                                <text x="65" y="35" font-family="Orbitron" font-size="18" font-weight="700" fill="white">ATMOSPHERE</text>
+                            </svg>
+                        </div>
+                        <p>Redefining fitness experiences with cutting-edge technology and expert training methodologies.</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="facilities.html">Facilities</a></li>
+                            <li><a href="female-gym.html">Female Gym</a></li>
+                            <li><a href="group-classes.html">Group Classes</a></li>
+                            <li><a href="training.html">Training</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>More Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="social-media.html">Social Media</a></li>
+                            <li><a href="packages.html">Packages</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                            <li><a href="register.html">Register Now</a></li>
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Info</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-envelope"></i> info@atmosphere.com.pk</li>
+                            <li><i class="fas fa-phone"></i> (021) 32400201</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Al Nadi Al Burhani Academy, Old Queens Road, Karachi</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Phase-2, Roof Top, D-11, inside The North Walk Mall, Karachi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 Atmosphere. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

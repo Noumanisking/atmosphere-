@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities - Atmosphere</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/facilities.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <svg class="logo" width="200" height="50" viewBox="0 0 200 50">
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#00ffcc" />
+                            <stop offset="100%" stop-color="#0099ff" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M30,10 C17.3,10 7,20.3 7,33 C7,45.7 17.3,56 30,56 C42.7,56 53,45.7 53,33 C53,20.3 42.7,10 30,10 Z M30,15 C40,15 48,23 48,33 C48,43 40,51 30,51 C20,51 12,43 12,33 C12,23 20,15 30,15 Z" transform="scale(0.6)" fill="url(#logo-gradient)"/>
+                    <path d="M65,33 L190,33 M65,25 L190,25 M65,41 L190,41" stroke="url(#logo-gradient)" stroke-width="2" stroke-linecap="round"/>
+                    <text x="65" y="35" font-family="Orbitron" font-size="18" font-weight="700" fill="white">ATMOSPHERE</text>
+                </svg>
+            </a>
+        </div>
+        
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="facilities.html" class="active"><i class="fas fa-dumbbell"></i> Facilities</a></li>
+                <li><a href="female-gym.html"><i class="fas fa-female"></i> Female Gym</a></li>
+                <li><a href="group-classes.html"><i class="fas fa-users"></i> Group Classes</a></li>
+                <li><a href="training.html"><i class="fas fa-running"></i> Training</a></li>
+                <li class="dropdown">
+                    <a href="social-media.html"><i class="fas fa-share-alt"></i> Social <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="social-media.html#events">Events</a>
+                        <a href="social-media.html#channels">Channels</a>
+                        <a href="social-media.html#blogs">Blogs</a>
+                    </div>
+                </li>
+                <li><a href="packages.html"><i class="fas fa-tags"></i> Packages</a></li>
+                <li><a href="contact-us.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="register.html" class="register-btn">Register Now</a></li>
+            </ul>
+        </nav>
+        
+        <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="facilities.html" class="active"><i class="fas fa-dumbbell"></i> Facilities</a></li>
+                <li><a href="female-gym.html"><i class="fas fa-female"></i> Female Gym</a></li>
+                <li><a href="group-classes.html"><i class="fas fa-users"></i> Group Classes</a></li>
+                <li><a href="training.html"><i class="fas fa-running"></i> Training</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)"><i class="fas fa-share-alt"></i> Social <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="social-media.html#events">Events</a>
+                        <a href="social-media.html#channels">Channels</a>
+                        <a href="social-media.html#blogs">Blogs</a>
+                    </div>
+                </li>
+                <li><a href="packages.html"><i class="fas fa-tags"></i> Packages</a></li>
+                <li><a href="contact-us.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="register.html" class="register-btn">Register Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-container">
+        <div class="hero-banner">
+            <div class="hero-slide" style="background-image: url('images/facilities-hero.jpg');">
+                <div class="hero-content">
+                    <h1>Our <span class="gradient-text">Facilities</span></h1>
+                    <p>State-of-the-art equipment in a futuristic training environment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Overview -->
+    <section class="facilities-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>World-Class <span class="gradient-text">Facilities</span></h2>
+                <div class="glow-line"></div>
+                <p>Experience fitness reimagined with our premium facilities designed for optimal performance</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Grid -->
+    <section class="facilities-grid-section">
+        <div class="container">
+            <div class="facilities-grid">
+                <!-- Cardio Section -->
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="images/cardio-section.jpg" alt="Cardio Section">
+                        <div class="facility-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                    </div>
+                    <div class="facility-content">
+                        <h3>Cardio Section</h3>
+                        <p>Equipped with the latest treadmills, ellipticals, bikes, and rowing machines, our cardio section features integrated entertainment systems and performance tracking.</p>
+                    </div>
+                </div>
+
+                <!-- Strength Area -->
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="images/strength-area.jpg" alt="Strength Area">
+                        <div class="facility-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                    </div>
+                    <div class="facility-content">
+                        <h3>Strength Area</h3>
+                        <p>Our strength zone features premium free weights, machines, and functional training equipment from top global brands designed for both beginners and advanced athletes.</p>
+                    </div>
+                </div>
+
+                <!-- Functional Fit -->
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="images/functional-fit.jpg" alt="Functional Fit">
+                        <div class="facility-icon">
+                            <i class="fas fa-running"></i>
+                        </div>
+                    </div>
+                    <div class="facility-content">
+                        <h3>Functional Fit</h3>
+                        <p>Our dedicated functional training space includes kettlebells, battle ropes, slam balls, TRX systems, and open floor areas for dynamic movement training.</p>
+                    </div>
+                </div>
+
+                <!-- Studio -->
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="images/studio.jpg" alt="Studio">
+                        <div class="facility-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                    </div>
+                    <div class="facility-content">
+                        <h3>Studio</h3>
+                        <p>Our spacious studio features floating floors, mirror walls, advanced sound systems, and customizable lighting for a variety of group classes and specialized training.</p>
+                    </div>
+                </div>
+
+                <!-- Boxing -->
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="images/boxing.jpg" alt="Boxing">
+                        <div class="facility-icon">
+                            <i class="fas fa-fist-raised"></i>
+                        </div>
+                    </div>
+                    <div class="facility-content">
+                        <h3>Boxing</h3>
+                        <p>Our boxing zone includes professional-grade punching bags, speed bags, a boxing ring, and training equipment for both beginners and advanced boxers.</p>
+                    </div>
+                </div>
+
+                <!-- Rejuvenation -->
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="images/rejuvenation.jpg" alt="Rejuvenation">
+                        <div class="facility-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                    </div>
+                    <div class="facility-content">
+                        <h3>Rejuvenation</h3>
+                        <p>Our recovery zone features massage chairs, foam rollers, compression therapy systems, and stretching areas to help you recover faster and perform better.</p>
+                    </div>
+                </div>
+
+                <!-- Cricket Academy -->
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="images/cricket.jpg" alt="Cricket Academy">
+                        <div class="facility-icon">
+                            <i class="fas fa-baseball-ball"></i>
+                        </div>
+                    </div>
+                    <div class="facility-content">
+                        <h3>Cricket Academy</h3>
+                        <p>Our specialized cricket training facility includes batting nets, bowling machines, and professional coaching staff to develop all aspects of your cricket skills.</p>
+                    </div>
+                </div>
+
+                <!-- Archery -->
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="images/archery.jpg" alt="Archery">
+                        <div class="facility-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                    </div>
+                    <div class="facility-content">
+                        <h3>Archery</h3>
+                        <p>Our archery range offers multiple target distances, professional equipment rental, and expert instruction for beginners and experienced archers alike.</p>
+                    </div>
+                </div>
+
+                <!-- Football Academy -->
+                <div class="facility-card">
+                    <div class="facility-image">
+                        <img src="images/football.jpg" alt="Football Academy">
+                        <div class="facility-icon">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                    </div>
+                    <div class="facility-content">
+                        <h3>Football Academy</h3>
+                        <p>Our football training facility includes indoor futsal courts, skill development areas, and professional coaching for players of all ages and skill levels.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Showcase -->
+    <section class="equipment-showcase">
+        <div class="container">
+            <div class="section-header">
+                <h2>Premium <span class="gradient-text">Equipment</span></h2>
+                <div class="glow-line"></div>
+                <p>Train with the best equipment from leading global fitness brands</p>
+            </div>
+            <div class="equipment-brands">
+                <div class="brand-logo">
+                    <img src="images/brand1.png" alt="Fitness Brand">
+                </div>
+                <div class="brand-logo">
+                    <img src="images/brand2.png" alt="Fitness Brand">
+                </div>
+                <div class="brand-logo">
+                    <img src="images/brand3.png" alt="Fitness Brand">
+                </div>
+                <div class="brand-logo">
+                    <img src="images/brand4.png" alt="Fitness Brand">
+                </div>
+                <div class="brand-logo">
+                    <img src="images/brand5.png" alt="Fitness Brand">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Tour -->
+    <section class="virtual-tour">
+        <div class="container">
+            <div class="section-header">
+                <h2>Virtual <span class="gradient-text">Tour</span></h2>
+                <div class="glow-line"></div>
+                <p>Take a virtual tour of our state-of-the-art facilities</p>
+            </div>
+            <div class="tour-video">
+                <div class="video-container">
+                    <img src="images/virtual-tour-thumbnail.jpg" alt="Virtual Tour">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Experience The <span class="gradient-text">Future</span></h2>
+                <p>Visit us today and discover the Atmosphere difference</p>
+                <div class="cta-buttons">
+                    <a href="register.html" class="neon-button">Register Now</a>
+                    <a href="contact-us.html" class="outline-button">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <div class="footer-logo">
+                            <svg class="logo" width="150" height="40" viewBox="0 0 200 50">
+                                <defs>
+                                    <linearGradient id="footer-logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#00ffcc" />
+                                        <stop offset="100%" stop-color="#0099ff" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="M30,10 C17.3,10 7,20.3 7,33 C7,45.7 17.3,56 30,56 C42.7,56 53,45.7 53,33 C53,20.3 42.7,10 30,10 Z M30,15 C40,15 48,23 48,33 C48,43 40,51 30,51 C20,51 12,43 12,33 C12,23 20,15 30,15 Z" transform="scale(0.6)" fill="url(#footer-logo-gradient)"/>
+                                <path d="M65,33 L190,33 M65,25 L190,25 M65,41 L190,41" stroke="url(#footer-logo-gradient)" stroke-width="2" stroke-linecap="round"/>
+                                <text x="65" y="35" font-family="Orbitron" font-size="18" font-weight="700" fill="white">ATMOSPHERE</text>
+                            </svg>
+                        </div>
+                        <p>Redefining fitness experiences with cutting-edge technology and expert training methodologies.</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="facilities.html">Facilities</a></li>
+                            <li><a href="female-gym.html">Female Gym</a></li>
+                            <li><a href="group-classes.html">Group Classes</a></li>
+                            <li><a href="training.html">Training</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>More Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="social-media.html">Social Media</a></li>
+                            <li><a href="packages.html">Packages</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                            <li><a href="register.html">Register Now</a></li>
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Info</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-envelope"></i> info@atmosphere.com.pk</li>
+                            <li><i class="fas fa-phone"></i> (021) 32400201</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Al Nadi Al Burhani Academy, Old Queens Road, Karachi</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Phase-2, Roof Top, D-11, inside The North Walk Mall, Karachi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 Atmosphere. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

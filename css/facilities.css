@@ -1,0 +1,40 @@
+/* Facilities Overview */
+.facilities-overview {
+  text-align: center;
+  padding-top: 0;
+}
+
+.facilities-overview .section-header p {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2rem;
+}
+
+/* Facilities Grid */
+.facilities-grid-section {
+  padding-top: 0;
+}
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.facility-card {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: var(--transition);
+  border: 1px solid var(--card-border);
+}
+
+.facility-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.facility-image {
+  position: relative;
+}
