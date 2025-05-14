@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages - Atmosphere</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/packages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <svg class="logo" width="200" height="50" viewBox="0 0 200 50">
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#00ffcc" />
+                            <stop offset="100%" stop-color="#0099ff" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Enhanced fitness-focused logo -->
+                    <path d="M30,10 C17.3,10 7,20.3 7,33 C7,45.7 17.3,56 30,56 C42.7,56 53,45.7 53,33 C53,20.3 42.7,10 30,10 Z M30,15 C40,15 48,23 48,33 C48,43 40,51 30,51 C20,51 12,43 12,33 C12,23 20,15 30,15 Z" transform="scale(0.6)" fill="url(#logo-gradient)"/>
+                    <!-- Dumbbell icon in the center -->
+                    <path d="M22,33 L38,33 M20,28 L40,28 M20,38 L40,38" stroke="url(#logo-gradient)" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="17" cy="33" r="5" fill="url(#logo-gradient)"/>
+                    <circle cx="43" cy="33" r="5" fill="url(#logo-gradient)"/>
+                    <path d="M65,33 L190,33 M65,25 L190,25 M65,41 L190,41" stroke="url(#logo-gradient)" stroke-width="2" stroke-linecap="round"/>
+                    <text x="65" y="35" font-family="Orbitron" font-size="18" font-weight="700" fill="white">ATMOSPHERE</text>
+                </svg>
+            </a>
+        </div>
+        
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="facilities.html"><i class="fas fa-dumbbell"></i> Facilities</a></li>
+                <li><a href="female-gym.html"><i class="fas fa-female"></i> Female Gym</a></li>
+                <li><a href="group-classes.html"><i class="fas fa-users"></i> Group Classes</a></li>
+                <li><a href="training.html"><i class="fas fa-running"></i> Training</a></li>
+                <li class="dropdown">
+                    <a href="social-media.html"><i class="fas fa-share-alt"></i> Social <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="social-media.html#events">Events</a>
+                        <a href="social-media.html#channels">Channels</a>
+                        <a href="social-media.html#blogs">Blogs</a>
+                    </div>
+                </li>
+                <li><a href="packages.html" class="active"><i class="fas fa-tags"></i> Packages</a></li>
+                <li><a href="contact-us.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="register.html" class="register-btn">Register Now</a></li>
+            </ul>
+        </nav>
+        
+        <div class="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="facilities.html"><i class="fas fa-dumbbell"></i> Facilities</a></li>
+                <li><a href="female-gym.html"><i class="fas fa-female"></i> Female Gym</a></li>
+                <li><a href="group-classes.html"><i class="fas fa-users"></i> Group Classes</a></li>
+                <li><a href="training.html"><i class="fas fa-running"></i> Training</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)"><i class="fas fa-share-alt"></i> Social <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="social-media.html#events">Events</a>
+                        <a href="social-media.html#channels">Channels</a>
+                        <a href="social-media.html#blogs">Blogs</a>
+                    </div>
+                </li>
+                <li><a href="packages.html" class="active"><i class="fas fa-tags"></i> Packages</a></li>
+                <li><a href="contact-us.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="register.html" class="register-btn">Register Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-container">
+        <div class="hero-banner">
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');">
+                <div class="hero-content">
+                    <h1>Membership <span class="gradient-text">Packages</span></h1>
+                    <p>Choose the perfect plan to achieve your fitness goals</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Toggle Section -->
+    <section class="pricing-toggle-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="gradient-text">Pricing Plans</span></h2>
+                <div class="glow-line"></div>
+                <p>Flexible membership options designed to fit your lifestyle and budget</p>
+            </div>
+            
+            <div class="pricing-toggle">
+                <span class="pricing-period">Monthly</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="pricing-toggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="pricing-period">Yearly <span class="discount">Save 20%</span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Cards Section -->
+    <section class="pricing-cards-section">
+        <div class="container">
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Basic</h3>
+                        <div class="price-container">
+                            <div class="price monthly">
+                                <span class="currency">Rs.</span>
+                                <span class="amount">5,000</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <div class="price yearly">
+                                <span class="currency">Rs.</span>
+                                <span class="amount">48,000</span>
+                                <span class="period">/year</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <ul class="features-list">
+                            <li class="included"><i class="fas fa-check"></i> Access to gym equipment</li>
+                            <li class="included"><i class="fas fa-check"></i> Locker room access</li>
+                            <li class="included"><i class="fas fa-check"></i> Fitness assessment</li>
+                            <li class="included"><i class="fas fa-check"></i> Mobile app access</li>
+                            <li class="excluded"><i class="fas fa-times"></i> Group classes</li>
+                            <li class="excluded"><i class="fas fa-times"></i> Personal training sessions</li>
+                            <li class="excluded"><i class="fas fa-times"></i> Nutrition consultation</li>
+                            <li class="excluded"><i class="fas fa-times"></i> Rejuvenation zone access</li>
+                        </ul>
+                        <a href="register.html" class="card-button">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="card-badge">Most Popular</div>
+                    <div class="card-header">
+                        <h3>Premium</h3>
+                        <div class="price-container">
+                            <div class="price monthly">
+                                <span class="currency">Rs.</span>
+                                <span class="amount">8,000</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <div class="price yearly">
+                                <span class="currency">Rs.</span>
+                                <span class="amount">76,800</span>
+                                <span class="period">/year</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <ul class="features-list">
+                            <li class="included"><i class="fas fa-check"></i> Access to gym equipment</li>
+                            <li class="included"><i class="fas fa-check"></i> Locker room access</li>
+                            <li class="included"><i class="fas fa-check"></i> Fitness assessment</li>
+                            <li class="included"><i class="fas fa-check"></i> Mobile app access</li>
+                            <li class="included"><i class="fas fa-check"></i> Unlimited group classes</li>
+                            <li class="included"><i class="fas fa-check"></i> 2 personal training sessions/month</li>
+                            <li class="excluded"><i class="fas fa-times"></i> Nutrition consultation</li>
+                            <li class="excluded"><i class="fas fa-times"></i> Rejuvenation zone access</li>
+                        </ul>
+                        <a href="register.html" class="card-button">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Elite</h3>
+                        <div class="price-container">
+                            <div class="price monthly">
+                                <span class="currency">Rs.</span>
+                                <span class="amount">12,000</span>
+                                <span class="period">/month</span>
+                            </div>
+                            <div class="price yearly">
+                                <span class="currency">Rs.</span>
+                                <span class="amount">115,200</span>
+                                <span class="period">/year</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <ul class="features-list">
+                            <li class="included"><i class="fas fa-check"></i> Access to gym equipment</li>
+                            <li class="included"><i class="fas fa-check"></i> Locker room access</li>
+                            <li class="included"><i class="fas fa-check"></i> Fitness assessment</li>
+                            <li class="included"><i class="fas fa-check"></i> Mobile app access</li>
+                            <li class="included"><i class="fas fa-check"></i> Unlimited group classes</li>
+                            <li class="included"><i class="fas fa-check"></i> 4 personal training sessions/month</li>
+                            <li class="included"><i class="fas fa-check"></i> Quarterly nutrition consultation</li>
+                            <li class="included"><i class="fas fa-check"></i> Unlimited rejuvenation zone access</li>
+                        </ul>
+                        <a href="register.html" class="card-button">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Chart Section -->
+    <section class="comparison-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Package <span class="gradient-text">Comparison</span></h2>
+                <div class="glow-line"></div>
+                <p>Compare our membership tiers to find the perfect fit for your fitness journey</p>
+            </div>
+            
+            <div class="comparison-table-container">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Features</th>
+                            <th>Basic</th>
+                            <th>Premium</th>
+                            <th>Elite</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gym Access Hours</td>
+                            <td>6 AM - 10 PM</td>
+                            <td>24/7</td>
+                            <td>24/7</td>
+                        </tr>
+                        <tr>
+                            <td>Group Classes</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td>Unlimited</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Personal Training</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td>2 sessions/month</td>
+                            <td>4 sessions/month</td>
+                        </tr>
+                        <tr>
+                            <td>Fitness Assessment</td>
+                            <td>Initial only</td>
+                            <td>Quarterly</td>
+                            <td>Monthly</td>
+                        </tr>
+                        <tr>
+                            <td>Nutrition Consultation</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td>Quarterly</td>
+                        </tr>
+                        <tr>
+                            <td>Rejuvenation Zone</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Guest Passes</td>
+                            <td>1/month</td>
+                            <td>2/month</td>
+                            <td>4/month</td>
+                        </tr>
+                        <tr>
+                            <td>Towel Service</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td>Included</td>
+                            <td>Included</td>
+                        </tr>
+                        <tr>
+                            <td>Locker Rental</td>
+                            <td>Daily use only</td>
+                            <td>Daily use only</td>
+                            <td>Dedicated locker</td>
+                        </tr>
+                        <tr>
+                            <td>Mobile App Access</td>
+                            <td>Basic features</td>
+                            <td>Full access</td>
+                            <td>Full access + priority support</td>
+                        </tr>
+                        <tr>
+                            <td>Freeze Membership</td>
+                            <td>30 days/year</td>
+                            <td>60 days/year</td>
+                            <td>90 days/year</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Packages Section -->
+    <section class="additional-packages-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Specialized <span class="gradient-text">Packages</span></h2>
+                <div class="glow-line"></div>
+                <p>Tailored packages for specific needs and goals</p>
+            </div>
+            
+            <div class="additional-packages-grid">
+                <div class="additional-package-card">
+                    <div class="package-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Family Package</h3>
+                    <p class="package-price">Rs. 15,000<span>/month</span></p>
+                    <p class="package-description">Perfect for families with up to 4 members. Includes access to all facilities and group classes for the whole family.</p>
+                    <ul class="package-highlights">
+                        <li><i class="fas fa-check"></i> Up to 4 family members</li>
+                        <li><i class="fas fa-check"></i> Shared personal training sessions</li>
+                        <li><i class="fas fa-check"></i> Family group classes</li>
+                        <li><i class="fas fa-check"></i> Childcare services</li>
+                    </ul>
+                    <a href="#" class="package-button">Learn More</a>
+                </div>
+                
+                <div class="additional-package-card">
+                    <div class="package-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Student Package</h3>
+                    <p class="package-price">Rs. 3,500<span>/month</span></p>
+                    <p class="package-description">Special discounted rate for full-time students. Valid student ID required at registration.</p>
+                    <ul class="package-highlights">
+                        <li><i class="fas fa-check"></i> Full gym access</li>
+                        <li><i class="fas fa-check"></i> 4 group classes/month</li>
+                        <li><i class="fas fa-check"></i> Student community events</li>
+                        <li><i class="fas fa-check"></i> Study area with WiFi</li>
+                    </ul>
+                    <a href="#" class="package-button">Learn More</a>
+                </div>
+                
+                <div class="additional-package-card">
+                    <div class="package-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Corporate Package</h3>
+                    <p class="package-price">Custom<span>/pricing</span></p>
+                    <p class="package-description">Tailored packages for businesses looking to promote employee wellness and team building.</p>
+                    <ul class="package-highlights">
+                        <li><i class="fas fa-check"></i> Volume discounts</li>
+                        <li><i class="fas fa-check"></i> Corporate wellness programs</li>
+                        <li><i class="fas fa-check"></i> Team building activities</li>
+                        <li><i class="fas fa-check"></i> Dedicated corporate events</li>
+                    </ul>
+                    <a href="#" class="package-button">Learn More</a>
+                </div>
+                
+                <div class="additional-package-card">
+                    <div class="package-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Short-Term Package</h3>
+                    <p class="package-price">Rs. 7,000<span>/month</span></p>
+                    <p class="package-description">Flexible 1-3 month memberships for visitors or those wanting to try before committing long-term.</p>
+                    <ul class="package-highlights">
+                        <li><i class="fas fa-check"></i> No long-term commitment</li>
+                        <li><i class="fas fa-check"></i> Full facility access</li>
+                        <li><i class="fas fa-check"></i> 2 personal training sessions</li>
+                        <li><i class="fas fa-check"></i> Fitness assessment</li>
+                    </ul>
+                    <a href="#" class="package-button">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+                <div class="glow-line"></div>
+                <p>Find answers to common questions about our membership packages</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is there a joining fee?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, there is a one-time joining fee of Rs. 2,000 for all new members. This fee is waived during certain promotional periods and for yearly membership commitments.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I freeze my membership?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can freeze your membership for a period of time depending on your membership tier. Basic members can freeze for up to 30 days per year, Premium for 60 days, and Elite for 90 days. A small administrative fee may apply.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the cancellation policy?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Monthly memberships require a 30-day written notice for cancellation. Yearly memberships are non-refundable but can be transferre

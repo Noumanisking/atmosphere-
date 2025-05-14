@@ -1,0 +1,529 @@
+/* Hero Section */
+.hero {
+  height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/placeholder.svg?height=1080&width=1920");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(0, 255, 204, 0.1), rgba(0, 0, 0, 0.3));
+  z-index: 1;
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
+  letter-spacing: 2px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 30px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Training Types Section */
+.training-types {
+  padding: 80px 20px;
+  background-color: #0a0a0a;
+}
+
+.training-types h2 {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.training-types h2::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: #00ffcc;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
+}
+
+.training-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.training-card {
+  background-color: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(0, 255, 204, 0.3);
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.training-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+}
+
+.training-icon {
+  font-size: 3rem;
+  color: #00ffcc;
+  margin-bottom: 20px;
+}
+
+.training-card h3 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.training-card p {
+  color: #ccc;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.neon-button {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: transparent;
+  color: #00ffcc;
+  border: 1px solid #00ffcc;
+  border-radius: 5px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.neon-button:hover {
+  background-color: rgba(0, 255, 204, 0.1);
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+}
+
+/* Trainers Section */
+.trainers {
+  padding: 80px 20px;
+  background-color: #0f0f0f;
+}
+
+.trainers h2 {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.trainers h2::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: #00ffcc;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
+}
+
+.trainer-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.trainer-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.trainer-card {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 15px;
+  background-color: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(0, 255, 204, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trainer-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+}
+
+.trainer-image {
+  height: 300px;
+  overflow: hidden;
+}
+
+.trainer-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.trainer-card:hover .trainer-image img {
+  transform: scale(1.05);
+}
+
+.trainer-info {
+  padding: 25px;
+  text-align: center;
+}
+
+.trainer-info h3 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.trainer-specialty {
+  color: #00ffcc;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.trainer-info p {
+  color: #ccc;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.trainer-certs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.trainer-certs span {
+  background-color: rgba(0, 255, 204, 0.1);
+  color: #00ffcc;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  border: 1px solid rgba(0, 255, 204, 0.3);
+}
+
+.book-trainer {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #00ffcc;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.book-trainer:hover {
+  background-color: #00e6b8;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.7);
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: transparent;
+  border: 1px solid #00ffcc;
+  color: #00ffcc;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: rgba(0, 255, 204, 0.1);
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+}
+
+/* Training Packages */
+.training-packages {
+  padding: 80px 20px;
+  background-color: #0a0a0a;
+}
+
+.training-packages h2 {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.training-packages h2::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: #00ffcc;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.package-card {
+  background-color: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(0, 255, 204, 0.3);
+  border-radius: 10px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.package-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+}
+
+.package-card.featured {
+  border: 2px solid #00ffcc;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+  transform: scale(1.05);
+}
+
+.package-card.featured:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+
+.featured-tag {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  background-color: #00ffcc;
+  color: #000;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.package-card h3 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.package-price {
+  font-size: 2.5rem;
+  color: #00ffcc;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.package-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.package-card ul li {
+  color: #ccc;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  padding-left: 25px;
+}
+
+.package-card ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #00ffcc;
+}
+
+.package-card ul li:last-child {
+  border-bottom: none;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 100px 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/placeholder.svg?height=1080&width=1920");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-section h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: #00ffcc;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cta-button:hover {
+  background-color: #00e6b8;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.7);
+  transform: translateY(-5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .training-types h2,
+  .trainers h2,
+  .training-packages h2,
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+
+  .trainer-carousel {
+    padding: 10px 0;
+  }
+
+  .trainer-card {
+    max-width: 280px;
+  }
+
+  .package-card.featured {
+    transform: scale(1);
+  }
+
+  .package-card.featured:hover {
+    transform: translateY(-10px);
+  }
+
+  .cta-section {
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .training-card,
+  .trainer-card,
+  .package-card {
+    padding: 20px;
+  }
+
+  .package-price {
+    font-size: 2rem;
+  }
+
+  .cta-button {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+}
