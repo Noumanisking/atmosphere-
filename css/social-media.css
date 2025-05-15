@@ -588,4 +588,6 @@
 }
 
 .blog-category {
-    background-color: rgba(0, 255, 204, \
+    background-color: rgba(0, 255, 204, 0.1);
+
+Let's fix the CSS for the packages page and create the social media JavaScript file:
