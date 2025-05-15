@@ -1,0 +1,103 @@
+/* Image Optimization Styles */
+
+/* Use correct aspect ratios to prevent layout shifts */
+img {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: attr(width) / attr(height);
+}
+
+/* Use native lazy loading where possible */
+img:not(.no-lazy) {
+  loading: lazy;
+}
+
+/* Progressive image loading effect */
+.progressive-image {
+  position: relative;
+  overflow: hidden;
+  background-color: #0a0a0a;
+}
+
+.progressive-image img {
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.progressive-image .placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(10px);
+  transform: scale(1.05);
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.progressive-image .full-image {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+}
+
+.progressive-image.loaded .placeholder {
+  opacity: 0;
+}
+
+.progressive-image.loaded .full-image {
+  opacity: 1;
+}
+
+/* Responsive image containers */
+.responsive-image-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  position: relative;
+  overflow: hidden;
+}
+
+.responsive-image-container.square {
+  padding-bottom: 100%; /* 1:1 aspect ratio */
+}
+
+.responsive-image-container.portrait {
+  padding-bottom: 150%; /* 2:3 aspect ratio */
+}
+
+.responsive-image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Background image optimization */
+.optimized-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Different quality images for different screen sizes */
+@media (max-width: 768px) {
+  .responsive-image-src {
+    content: attr(data-src-small);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .responsive-image-src {
+    content: attr(data-src-medium);
+  }
+}
+
+@media (min-width: 1201px) {
+  .responsive-image-src {
+    content: attr(data-src-large);
+  }
+}

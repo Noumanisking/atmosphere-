@@ -1,68 +1,40 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Trainer Carousel Functionality
-  const carousel = document.querySelector(".trainer-carousel")
-  const prevBtn = document.querySelector(".prev-btn")
-  const nextBtn = document.querySelector(".next-btn")
-  const cards = document.querySelectorAll(".trainer-card")
+  // Trainers carousel functionality
+  const trainerCards = document.querySelectorAll(".trainer-card")
+  const prevTrainer = document.querySelector(".prev-trainer")
+  const nextTrainer = document.querySelector(".next-trainer")
+  const trainersSlider = document.querySelector(".trainers-slider")
 
-  if (carousel && prevBtn && nextBtn && cards.length > 0) {
-    const cardWidth = cards[0].offsetWidth + 30 // card width + margin
-    let currentIndex = 0
-
-    // Update carousel position
-    function updateCarousel() {
-      carousel.scrollTo({
-        left: currentIndex * cardWidth,
+  if (prevTrainer && nextTrainer && trainersSlider) {
+    prevTrainer.addEventListener("click", () => {
+      trainersSlider.scrollBy({
+        left: -350,
         behavior: "smooth",
       })
-    }
-
-    // Previous button click
-    prevBtn.addEventListener("click", () => {
-      if (currentIndex > 0) {
-        currentIndex--
-        updateCarousel()
-      }
     })
 
-    // Next button click
-    nextBtn.addEventListener("click", () => {
-      if (currentIndex < cards.length - 1) {
-        currentIndex++
-        updateCarousel()
-      }
-    })
-
-    // Handle scroll events to update currentIndex
-    carousel.addEventListener("scroll", () => {
-      const scrollPosition = carousel.scrollLeft
-      currentIndex = Math.round(scrollPosition / cardWidth)
+    nextTrainer.addEventListener("click", () => {
+      trainersSlider.scrollBy({
+        left: 350,
+        behavior: "smooth",
+      })
     })
   }
 
-  // Animation for training cards
-  const trainingCards = document.querySelectorAll(".training-card")
+  // Animation for training cards and package cards on scroll
+  const animateOnScroll = () => {
+    const elements = document.querySelectorAll(".training-type-card, .trainer-card, .package-card")
 
-  function checkScroll() {
-    trainingCards.forEach((card) => {
-      const cardTop = card.getBoundingClientRect().top
-      const triggerBottom = window.innerHeight * 0.8
+    elements.forEach((element) => {
+      const elementPosition = element.getBoundingClientRect().top
+      const screenPosition = window.innerHeight / 1.2
 
-      if (cardTop < triggerBottom) {
-        card.style.opacity = "1"
-        card.style.transform = "translateY(0)"
+      if (elementPosition < screenPosition) {
+        element.classList.add("animate")
       }
     })
   }
 
-  // Set initial state for animation
-  trainingCards.forEach((card) => {
-    card.style.opacity = "0"
-    card.style.transform = "translateY(50px)"
-    card.style.transition = "opacity 0.5s ease, transform 0.5s ease"
-  })
-
-  // Check scroll position on load and scroll
-  window.addEventListener("load", checkScroll)
-  window.addEventListener("scroll", checkScroll)
+  window.addEventListener("scroll", animateOnScroll)
+  animateOnScroll() // Initialize on page load
 })

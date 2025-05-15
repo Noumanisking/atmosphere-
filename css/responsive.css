@@ -1,0 +1,226 @@
+/* Global Responsive Styles */
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  /* Fine-tune desktop-specific styles */
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .hero-content p {
+    font-size: 1.3rem;
+  }
+
+  .section-header h2 {
+    font-size: 3rem;
+  }
+}
+
+/* Large devices (desktops) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .section-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  /* Adjust card layouts for medium screens */
+  .feature-card,
+  .training-type-card,
+  .package-card,
+  .blog-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Small devices (landscape phones) */
+@media (max-width: 767px) and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  /* Adjust footer for small screens */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Adjust card layouts for small screens */
+  .feature-card,
+  .training-type-card,
+  .package-card,
+  .blog-card {
+    padding: 1.2rem;
+  }
+
+  /* Stack button groups */
+  .cta-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .cta-buttons a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Extra small devices (portrait phones) */
+@media (max-width: 575px) {
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Simplify design on very small screens */
+  section {
+    padding: 3rem 0;
+  }
+
+  .feature-card,
+  .training-type-card,
+  .package-card,
+  .blog-card {
+    padding: 1rem;
+  }
+
+  /* Adjust grid layouts */
+  .features-grid,
+  .training-types-grid,
+  .packages-grid,
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Stack button groups */
+  .cta-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .cta-buttons a {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Fix overlapping elements */
+  .trainer-card.featured,
+  .package-card.featured {
+    transform: scale(1);
+  }
+
+  .trainer-card.featured:hover,
+  .package-card.featured:hover {
+    transform: translateY(-10px);
+  }
+}
+
+/* Ensure images are responsive */
+@media (max-width: 768px) {
+  .responsive-img {
+    height: auto;
+    max-height: 300px;
+  }
+
+  .hero-container {
+    height: 70vh;
+  }
+
+  .gallery-item {
+    height: 200px;
+  }
+
+  .trainer-image {
+    height: 200px;
+  }
+}
+
+/* Fix navigation on very small screens */
+@media (max-width: 380px) {
+  .logo-container svg {
+    width: 150px;
+  }
+
+  .mobile-nav ul li a {
+    font-size: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.8rem;
+  }
+}

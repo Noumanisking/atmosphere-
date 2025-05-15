@@ -1,240 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Training - Atmosphere Fitness</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/training.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Training - Atmosphere</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/training.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/atmosphere-logo.svg" alt="Atmosphere Fitness">
-            </a>
-        </div>
-        <div class="menu-toggle">
-            <i class="fas fa-bars"></i>
-        </div>
-        <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="facilities.html">Facilities</a></li>
-            <li><a href="female-gym.html">Female Gym</a></li>
-            <li><a href="group-classes.html">Group Classes</a></li>
-            <li><a href="training.html" class="active">Training</a></li>
-            <li><a href="packages.html">Packages</a></li>
-            <li><a href="social-media.html">Social Media</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
-        </ul>
-        <div class="auth-buttons">
-            <a href="login.html" class="login-btn">Login</a>
-            <a href="register.html" class="register-btn">Register</a>
-        </div>
-    </nav>
+  <!-- Header with Navigation -->
+  <header>
+      <div class="logo-container">
+          <a href="index.html">
+              <svg class="logo" width="200" height="50" viewBox="0 0 200 50">
+                  <defs>
+                      <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                          <stop offset="0%" stop-color="#00ffcc" />
+                          <stop offset="100%" stop-color="#0099ff" />
+                      </linearGradient>
+                  </defs>
+                  <!-- Enhanced fitness-focused logo -->
+                  <path d="M30,10 C17.3,10 7,20.3 7,33 C7,45.7 17.3,56 30,56 C42.7,56 53,45.7 53,33 C53,20.3 42.7,10 30,10 Z M30,15 C40,15 48,23 48,33 C48,43 40,51 30,51 C20,51 12,43 12,33 C12,23 20,15 30,15 Z" transform="scale(0.6)" fill="url(#logo-gradient)"/>
+                  <!-- Dumbbell icon in the center -->
+                  <path d="M22,33 L38,33 M20,28 L40,28 M20,38 L40,38" stroke="url(#logo-gradient)" stroke-width="3" stroke-linecap="round"/>
+                  <circle cx="17" cy="33" r="5" fill="url(#logo-gradient)"/>
+                  <circle cx="43" cy="33" r="5" fill="url(#logo-gradient)"/>
+                  <path d="M65,33 L190,33 M65,25 L190,25 M65,41 L190,41" stroke="url(#logo-gradient)" stroke-width="2" stroke-linecap="round"/>
+                  <text x="65" y="35" font-family="Orbitron" font-size="18" font-weight="700" fill="white">ATMOSPHERE</text>
+              </svg>
+          </a>
+      </div>
+      
+      <nav class="desktop-nav">
+          <ul>
+              <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+              <li><a href="facilities.html"><i class="fas fa-dumbbell"></i> Facilities</a></li>
+              <li><a href="female-gym.html"><i class="fas fa-female"></i> Female Gym</a></li>
+              <li><a href="group-classes.html"><i class="fas fa-users"></i> Group Classes</a></li>
+              <li><a href="training.html" class="active"><i class="fas fa-running"></i> Training</a></li>
+              <li class="dropdown">
+                  <a href="social-media.html"><i class="fas fa-share-alt"></i> Social <i class="fas fa-chevron-down"></i></a>
+                  <div class="dropdown-content">
+                      <a href="social-media.html#events">Events</a>
+                      <a href="social-media.html#channels">Channels</a>
+                      <a href="social-media.html#blogs">Blogs</a>
+                  </div>
+              </li>
+              <li><a href="packages.html"><i class="fas fa-tags"></i> Packages</a></li>
+              <li><a href="contact-us.html"><i class="fas fa-envelope"></i> Contact</a></li>
+              <li><a href="register.html" class="register-btn">Register Now</a></li>
+          </ul>
+      </nav>
+      
+      <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      
+      <nav class="mobile-nav">
+          <ul>
+              <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+              <li><a href="facilities.html"><i class="fas fa-dumbbell"></i> Facilities</a></li>
+              <li><a href="female-gym.html"><i class="fas fa-female"></i> Female Gym</a></li>
+              <li><a href="group-classes.html"><i class="fas fa-users"></i> Group Classes</a></li>
+              <li><a href="training.html" class="active"><i class="fas fa-running"></i> Training</a></li>
+              <li class="dropdown">
+                  <a href="javascript:void(0)"><i class="fas fa-share-alt"></i> Social <i class="fas fa-chevron-down"></i></a>
+                  <div class="dropdown-content">
+                      <a href="social-media.html#events">Events</a>
+                      <a href="social-media.html#channels">Channels</a>
+                      <a href="social-media.html#blogs">Blogs</a>
+                  </div>
+              </li>
+              <li><a href="packages.html"><i class="fas fa-tags"></i> Packages</a></li>
+              <li><a href="contact-us.html"><i class="fas fa-envelope"></i> Contact</a></li>
+              <li><a href="register.html" class="register-btn">Register Now</a></li>
+          </ul>
+      </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>PERSONAL TRAINING</h1>
-            <p>Achieve your fitness goals with our expert trainers</p>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero-container">
+      <div class="hero-banner">
+          <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');">
+              <div class="hero-content">
+                  <h1>Personal <span class="gradient-text">Training</span></h1>
+                  <p>Expert coaching designed to transform your fitness journey</p>
+              </div>
+          </div>
+      </div>
+  </section>
 
-    <!-- Training Types Section -->
-    <section class="training-types">
-        <h2>SPECIALIZED TRAINING PROGRAMS</h2>
-        <div class="training-grid">
-            <div class="training-card">
-                <div class="training-icon">
-                    <i class="fas fa-bolt"></i>
-                </div>
-                <h3>HIIT TRAINING</h3>
-                <p>High-intensity interval training to maximize calorie burn and improve cardiovascular health.</p>
-                <a href="#" class="neon-button">Learn More</a>
-            </div>
-            <div class="training-card">
-                <div class="training-icon">
-                    <i class="fas fa-dumbbell"></i>
-                </div>
-                <h3>STRENGTH TRAINING</h3>
-                <p>Build muscle, increase strength, and improve body composition with our expert guidance.</p>
-                <a href="#" class="neon-button">Learn More</a>
-            </div>
-            <div class="training-card">
-                <div class="training-icon">
-                    <i class="fas fa-running"></i>
-                </div>
-                <h3>MOBILITY TRAINING</h3>
-                <p>Enhance flexibility, prevent injuries, and improve overall movement patterns.</p>
-                <a href="#" class="neon-button">Learn More</a>
-            </div>
-        </div>
-    </section>
+  <!-- Training Types Section -->
+  <section class="training-types-section">
+      <div class="container">
+          <div class="section-header">
+              <h2>Specialized <span class="gradient-text">Programs</span></h2>
+              <div class="glow-line"></div>
+          </div>
+          <div class="training-types-grid">
+              <div class="training-type-card">
+                  <div class="training-type-icon">
+                      <i class="fas fa-bolt"></i>
+                  </div>
+                  <h3>HIIT Training</h3>
+                  <p>High-intensity interval training to maximize calorie burn and improve cardiovascular health.</p>
+                  <a href="#" class="neon-button">Learn More</a>
+              </div>
+              <div class="training-type-card">
+                  <div class="training-type-icon">
+                      <i class="fas fa-dumbbell"></i>
+                  </div>
+                  <h3>Strength Training</h3>
+                  <p>Build muscle, increase strength, and improve body composition with our expert guidance.</p>
+                  <a href="#" class="neon-button">Learn More</a>
+              </div>
+              <div class="training-type-card">
+                  <div class="training-type-icon">
+                      <i class="fas fa-running"></i>
+                  </div>
+                  <h3>Mobility Training</h3>
+                  <p>Enhance flexibility, prevent injuries, and improve overall movement patterns.</p>
+                  <a href="#" class="neon-button">Learn More</a>
+              </div>
+          </div>
+      </div>
+  </section>
 
-    <!-- Trainers Section -->
-    <section class="trainers">
-        <h2>MEET OUR EXPERT TRAINERS</h2>
-        <div class="trainer-carousel">
-            <div class="trainer-card">
-                <div class="trainer-image">
-                    <img src="/placeholder.svg?height=300&width=300" alt="Alex Johnson">
-                </div>
-                <div class="trainer-info">
-                    <h3>ALEX JOHNSON</h3>
-                    <p class="trainer-specialty">Strength & Conditioning Specialist</p>
-                    <p>With over 10 years of experience, Alex specializes in strength training and athletic performance.</p>
-                    <div class="trainer-certs">
-                        <span>NASM-CPT</span>
-                        <span>CSCS</span>
-                        <span>TRX</span>
-                    </div>
-                    <a href="#" class="book-trainer">Book a Session</a>
-                </div>
-            </div>
-            <div class="trainer-card">
-                <div class="trainer-image">
-                    <img src="/placeholder.svg?height=300&width=300" alt="Samantha Lee">
-                </div>
-                <div class="trainer-info">
-                    <h3>SAMANTHA LEE</h3>
-                    <p class="trainer-specialty">Nutrition & Weight Management</p>
-                    <p>Samantha combines nutrition coaching with personalized training for optimal results.</p>
-                    <div class="trainer-certs">
-                        <span>ACE-CPT</span>
-                        <span>PN-L2</span>
-                        <span>HIIT</span>
-                    </div>
-                    <a href="#" class="book-trainer">Book a Session</a>
-                </div>
-            </div>
-            <div class="trainer-card">
-                <div class="trainer-image">
-                    <img src="/placeholder.svg?height=300&width=300" alt="Marcus Chen">
-                </div>
-                <div class="trainer-info">
-                    <h3>MARCUS CHEN</h3>
-                    <p class="trainer-specialty">Mobility & Recovery Expert</p>
-                    <p>Marcus focuses on improving movement patterns and preventing injuries through mobility work.</p>
-                    <div class="trainer-certs">
-                        <span>NSCA-CPT</span>
-                        <span>FMS</span>
-                        <span>FRC</span>
-                    </div>
-                    <a href="#" class="book-trainer">Book a Session</a>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-controls">
-            <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
-            <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
-        </div>
-    </section>
+  <!-- Trainers Section -->
+  <section class="trainers-section">
+      <div class="container">
+          <div class="section-header">
+              <h2>Expert <span class="gradient-text">Trainers</span></h2>
+              <div class="glow-line"></div>
+          </div>
+          <div class="trainers-slider">
+              <div class="trainer-card">
+                  <div class="trainer-image">
+                      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Alex Johnson">
+                  </div>
+                  <div class="trainer-info">
+                      <h3>Alex Johnson</h3>
+                      <p class="trainer-specialty">Strength & Conditioning Specialist</p>
+                      <p>With over 10 years of experience, Alex specializes in strength training and athletic performance.</p>
+                      <div class="trainer-certs">
+                          <span>NASM-CPT</span>
+                          <span>CSCS</span>
+                          <span>TRX</span>
+                      </div>
+                      <a href="#" class="book-trainer-btn">Book a Session</a>
+                  </div>
+              </div>
+              <div class="trainer-card">
+                  <div class="trainer-image">
+                      <img src="https://images.unsplash.com/photo-1609899464926-c34568044d01?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Samantha Lee">
+                  </div>
+                  <div class="trainer-info">
+                      <h3>Samantha Lee</h3>
+                      <p class="trainer-specialty">Nutrition & Weight Management</p>
+                      <p>Samantha combines nutrition coaching with personalized training for optimal results.</p>
+                      <div class="trainer-certs">
+                          <span>ACE-CPT</span>
+                          <span>PN-L2</span>
+                          <span>HIIT</span>
+                      </div>
+                      <a href="#" class="book-trainer-btn">Book a Session</a>
+                  </div>
+              </div>
+              <div class="trainer-card">
+                  <div class="trainer-image">
+                      <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Marcus Chen">
+                  </div>
+                  <div class="trainer-info">
+                      <h3>Marcus Chen</h3>
+                      <p class="trainer-specialty">Mobility & Recovery Expert</p>
+                      <p>Marcus focuses on improving movement patterns and preventing injuries through mobility work.</p>
+                      <div class="trainer-certs">
+                          <span>NSCA-CPT</span>
+                          <span>FMS</span>
+                          <span>FRC</span>
+                      </div>
+                      <a href="#" class="book-trainer-btn">Book a Session</a>
+                  </div>
+              </div>
+          </div>
+          <div class="trainers-controls">
+              <button class="prev-trainer"><i class="fas fa-chevron-left"></i></button>
+              <button class="next-trainer"><i class="fas fa-chevron-right"></i></button>
+          </div>
+      </div>
+  </section>
 
-    <!-- Training Packages -->
-    <section class="training-packages">
-        <h2>TRAINING PACKAGES</h2>
-        <div class="packages-grid">
-            <div class="package-card">
-                <h3>STARTER</h3>
-                <p class="package-price">$299</p>
-                <ul>
-                    <li>4 Personal Training Sessions</li>
-                    <li>Initial Fitness Assessment</li>
-                    <li>Basic Nutrition Guide</li>
-                    <li>Access to Training App</li>
-                </ul>
-                <a href="packages.html" class="neon-button">View Details</a>
-            </div>
-            <div class="package-card featured">
-                <div class="featured-tag">POPULAR</div>
-                <h3>TRANSFORMATION</h3>
-                <p class="package-price">$599</p>
-                <ul>
-                    <li>10 Personal Training Sessions</li>
-                    <li>Comprehensive Assessment</li>
-                    <li>Customized Nutrition Plan</li>
-                    <li>Weekly Check-ins</li>
-                    <li>Access to Training App</li>
-                </ul>
-                <a href="packages.html" class="neon-button">View Details</a>
-            </div>
-            <div class="package-card">
-                <h3>ELITE</h3>
-                <p class="package-price">$999</p>
-                <ul>
-                    <li>20 Personal Training Sessions</li>
-                    <li>Advanced Fitness Assessment</li>
-                    <li>Personalized Nutrition Coaching</li>
-                    <li>Bi-weekly Check-ins</li>
-                    <li>Recovery Protocols</li>
-                    <li>Premium App Features</li>
-                </ul>
-                <a href="packages.html" class="neon-button">View Details</a>
-            </div>
-        </div>
-    </section>
+  <!-- Training Packages -->
+  <section class="training-packages-section">
+      <div class="container">
+          <div class="section-header">
+              <h2>Training <span class="gradient-text">Packages</span></h2>
+              <div class="glow-line"></div>
+          </div>
+          <div class="packages-grid">
+              <div class="package-card">
+                  <h3>Starter</h3>
+                  <p class="package-price">Rs. 15,000</p>
+                  <ul>
+                      <li><i class="fas fa-check"></i> 4 Personal Training Sessions</li>
+                      <li><i class="fas fa-check"></i> Initial Fitness Assessment</li>
+                      <li><i class="fas fa-check"></i> Basic Nutrition Guide</li>
+                      <li><i class="fas fa-check"></i> Access to Training App</li>
+                  </ul>
+                  <a href="packages.html" class="neon-button">View Details</a>
+              </div>
+              <div class="package-card featured">
+                  <div class="package-badge">Popular</div>
+                  <h3>Transformation</h3>
+                  <p class="package-price">Rs. 30,000</p>
+                  <ul>
+                      <li><i class="fas fa-check"></i> 10 Personal Training Sessions</li>
+                      <li><i class="fas fa-check"></i> Comprehensive Assessment</li>
+                      <li><i class="fas fa-check"></i> Customized Nutrition Plan</li>
+                      <li><i class="fas fa-check"></i> Weekly Check-ins</li>
+                      <li><i class="fas fa-check"></i> Access to Training App</li>
+                  </ul>
+                  <a href="packages.html" class="neon-button">View Details</a>
+              </div>
+              <div class="package-card">
+                  <h3>Elite</h3>
+                  <p class="package-price">Rs. 50,000</p>
+                  <ul>
+                      <li><i class="fas fa-check"></i> 20 Personal Training Sessions</li>
+                      <li><i class="fas fa-check"></i> Advanced Fitness Assessment</li>
+                      <li><i class="fas fa-check"></i> Personalized Nutrition Coaching</li>
+                      <li><i class="fas fa-check"></i> Bi-weekly Check-ins</li>
+                      <li><i class="fas fa-check"></i> Recovery Protocols</li>
+                      <li><i class="fas fa-check"></i> Premium App Features</li>
+                  </ul>
+                  <a href="packages.html" class="neon-button">View Details</a>
+              </div>
+          </div>
+      </div>
+  </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="cta-content">
-            <h2>READY TO TRANSFORM YOUR FITNESS?</h2>
-            <p>Book a free consultation with one of our expert trainers today.</p>
-            <a href="#" class="cta-button">Book Consultation</a>
-        </div>
-    </section>
+  <!-- CTA Section -->
+  <section class="cta-section">
+      <div class="container">
+          <div class="cta-content">
+              <h2>Ready to <span class="gradient-text">Transform</span>?</h2>
+              <p>Book a free consultation with one of our expert trainers today</p>
+              <div class="cta-buttons">
+                  <a href="#" class="neon-button">Book Consultation</a>
+                  <a href="packages.html" class="outline-button">View All Packages</a>
+              </div>
+          </div>
+      </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="images/atmosphere-logo.svg" alt="Atmosphere Fitness">
-            </div>
-            <div class="footer-links">
-                <div class="footer-column">
-                    <h3>EXPLORE</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="facilities.html">Facilities</a></li>
-                        <li><a href="female-gym.html">Female Gym</a></li>
-                        <li><a href="group-classes.html">Group Classes</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>SERVICES</h3>
-                    <ul>
-                        <li><a href="training.html">Personal Training</a></li>
-                        <li><a href="packages.html">Membership Packages</a></li>
-                        <li><a href="#">Nutrition Coaching</a></li>
-                        <li><a href="#">Corporate Wellness</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>CONNECT</h3>
-                    <ul>
-                        <li><a href="social-media.html">Social Media</a></li>
-                        <li><a href="contact-us.html">Contact Us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Partnerships</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-social">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Atmosphere Fitness. All Rights Reserved.</p>
-        </div>
-    </footer>
+  <!-- Footer -->
+  <footer>
+      <div class="footer-top">
+          <div class="container">
+              <div class="footer-grid">
+                  <div class="footer-column">
+                      <div class="footer-logo">
+                          <svg class="logo" width="150" height="40" viewBox="0 0 200 50">
+                              <defs>
+                                  <linearGradient id="footer-logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                      <stop offset="0%" stop-color="#00ffcc" />
+                                      <stop offset="100%" stop-color="#0099ff" />
+                                  </linearGradient>
+                              </defs>
+                              <path d="M30,10 C17.3,10 7,20.3 7,33 C7,45.7 17.3,56 30,56 C42.7,56 53,45.7 53,33 C53,20.3 42.7,10 30,10 Z M30,15 C40,15 48,23 48,33 C48,43 40,51 30,51 C20,51 12,43 12,33 C12,23 20,15 30,15 Z" transform="scale(0.6)" fill="url(#footer-logo-gradient)"/>
+                              <path d="M22,33 L38,33 M20,28 L40,28 M20,38 L40,38" stroke="url(#footer-logo-gradient)" stroke-width="3" stroke-linecap="round"/>
+                              <circle cx="17" cy="33" r="5" fill="url(#footer-logo-gradient)"/>
+                              <circle cx="43" cy="33" r="5" fill="url(#footer-logo-gradient)"/>
+                              <path d="M65,33 L190,33 M65,25 L190,25 M65,41 L190,41" stroke="url(#footer-logo-gradient)" stroke-width="2" stroke-linecap="round"/>
+                              <text x="65" y="35" font-family="Orbitron" font-size="18" font-weight="700" fill="white">ATMOSPHERE</text>
+                          </svg>
+                      </div>
+                      <p>Redefining fitness experiences with cutting-edge technology and expert training methodologies.</p>
+                      <div class="social-icons">
+                          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                      </div>
+                  </div>
+                  <div class="footer-column">
+                      <h3>Quick Links</h3>
+                      <ul class="footer-links">
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="facilities.html">Facilities</a></li>
+                          <li><a href="female-gym.html">Female Gym</a></li>
+                          <li><a href="group-classes.html">Group Classes</a></li>
+                          <li><a href="training.html">Training</a></li>
+                      </ul>
+                  </div>
+                  <div class="footer-column">
+                      <h3>More Links</h3>
+                      <ul class="footer-links">
+                          <li><a href="social-media.html">Social Media</a></li>
+                          <li><a href="packages.html">Packages</a></li>
+                          <li><a href="contact-us.html">Contact Us</a></li>
+                          <li><a href="register.html">Register Now</a></li>
+                          <li><a href="login.html">Login</a></li>
+                      </ul>
+                  </div>
+                  <div class="footer-column">
+                      <h3>Contact Info</h3>
+                      <ul class="contact-info">
+                          <li><i class="fas fa-envelope"></i> info@atmosphere.com.pk</li>
+                          <li><i class="fas fa-phone"></i> (021) 32400201</li>
+                          <li><i class="fas fa-map-marker-alt"></i> Al Nadi Al Burhani Academy, Old Queens Road, Karachi</li>
+                          <li><i class="fas fa-map-marker-alt"></i> Phase-2, Roof Top, D-11, inside The North Walk Mall, Karachi</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <div class="container">
+              <p>&copy; 2023 Atmosphere. All Rights Reserved.</p>
+          </div>
+      </div>
+  </footer>
 
-    <script src="js/main.js"></script>
-    <script src="js/training.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/training.js"></script>
 </body>
 </html>

@@ -1,23 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Gallery Filter Functionality
+  // Event Gallery Filter Functionality
   const filterButtons = document.querySelectorAll(".filter-btn")
   const galleryItems = document.querySelectorAll(".gallery-item")
 
   if (filterButtons.length > 0 && galleryItems.length > 0) {
     filterButtons.forEach((button) => {
-      button.addEventListener("click", () => {
+      button.addEventListener("click", function () {
         // Remove active class from all buttons
         filterButtons.forEach((btn) => btn.classList.remove("active"))
 
         // Add active class to clicked button
-        button.classList.add("active")
+        this.classList.add("active")
 
-        // Get filter value
-        const filterValue = button.getAttribute("data-filter")
+        const filter = this.getAttribute("data-filter")
 
-        // Filter gallery items
+        // Show/hide gallery items based on filter
         galleryItems.forEach((item) => {
-          if (filterValue === "all" || item.getAttribute("data-category") === filterValue) {
+          if (filter === "all" || item.getAttribute("data-category") === filter) {
             item.style.display = "block"
             setTimeout(() => {
               item.style.opacity = "1"
@@ -35,91 +34,66 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }
 
-  // YouTube Video Placeholder Functionality
+  // Video Player Functionality
   const videoPlaceholder = document.querySelector(".video-placeholder")
-  const iframe = document.querySelector(".video-container iframe")
-
-  if (videoPlaceholder && iframe) {
-    videoPlaceholder.addEventListener("click", () => {
-      // Replace 'VIDEO_ID' with your actual YouTube video ID
-      const videoId = "dQw4w9WgXcQ" // Example video ID
-
-      // Set iframe src to YouTube embed URL
-      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`
-
-      // Hide placeholder
-      videoPlaceholder.style.display = "none"
-    })
-  }
-
-  // Playlist Item Click Functionality
+  const videoContainer = document.querySelector(".video-container")
   const playlistItems = document.querySelectorAll(".playlist-item")
 
-  if (playlistItems.length > 0 && iframe) {
-    playlistItems.forEach((item, index) => {
-      item.addEventListener("click", () => {
-        // Example video IDs - replace with your actual video IDs
-        const videoIds = ["dQw4w9WgXcQ", "dQw4w9WgXcQ", "dQw4w9WgXcQ"]
+  if (videoPlaceholder && videoContainer) {
+    videoPlaceholder.addEventListener("click", () => {
+      // Replace with your actual YouTube video ID
+      const videoId = "dQw4w9WgXcQ"
 
-        // Set iframe src to YouTube embed URL
-        iframe.src = `https://www.youtube.com/embed/${videoIds[index]}?autoplay=1`
+      const iframe = document.createElement("iframe")
+      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`
+      iframe.width = "100%"
+      iframe.height = "100%"
+      iframe.frameBorder = "0"
+      iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      iframe.allowFullscreen = true
 
-        // Hide placeholder
-        if (videoPlaceholder) {
-          videoPlaceholder.style.display = "none"
-        }
+      videoContainer.innerHTML = ""
+      videoContainer.appendChild(iframe)
+    })
 
-        // Highlight selected playlist item
-        playlistItems.forEach((item) => item.classList.remove("active"))
-        item.classList.add("active")
+    if (playlistItems.length > 0) {
+      playlistItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          // You would normally set different video IDs for each playlist item
+          const videoId = "dQw4w9WgXcQ"
+
+          const iframe = document.createElement("iframe")
+          iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`
+          iframe.width = "100%"
+          iframe.height = "100%"
+          iframe.frameBorder = "0"
+          iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          iframe.allowFullscreen = true
+
+          videoContainer.innerHTML = ""
+          videoContainer.appendChild(iframe)
+
+          // Scroll up to video if needed
+          videoContainer.scrollIntoView({ behavior: "smooth" })
+        })
       })
+    }
+  }
+
+  // Animation for blog cards and gallery items on scroll
+  const animateOnScroll = () => {
+    const elements = document.querySelectorAll(".blog-card, .gallery-item, .social-icon-large")
+
+    elements.forEach((element) => {
+      const elementPosition = element.getBoundingClientRect().top
+      const screenPosition = window.innerHeight / 1.2
+
+      if (elementPosition < screenPosition) {
+        element.classList.add("animate")
+      }
     })
   }
 
-  // Animation for gallery items
-  function animateGalleryItems() {
-    galleryItems.forEach((item, index) => {
-      setTimeout(() => {
-        item.style.opacity = "1"
-        item.style.transform = "translateY(0)"
-      }, index * 100)
-    })
-  }
-
-  // Set initial state for animation
-  galleryItems.forEach((item) => {
-    item.style.opacity = "0"
-    item.style.transform = "translateY(30px)"
-    item.style.transition = "opacity 0.5s ease, transform 0.5s ease"
-  })
-
-  // Animate gallery items on page load
-  window.addEventListener("load", animateGalleryItems)
-
-  // FAQ Accordion Functionality
-  const faqItems = document.querySelectorAll(".faq-item")
-
-  if (faqItems.length > 0) {
-    faqItems.forEach((item) => {
-      const question = item.querySelector(".faq-question")
-      const answer = item.querySelector(".faq-answer")
-      const icon = item.querySelector(".faq-toggle i")
-
-      question.addEventListener("click", () => {
-        // Toggle active class
-        item.classList.toggle("active")
-
-        // Toggle icon
-        if (icon) {
-          if (item.classList.contains("active")) {
-            icon.classList.remove("fa-plus")
-            icon.classList.add("fa-minus")
-          } else {
-            icon.classList.remove("fa-minus")
-            icon.classList.add("fa-plus")
-          }
-        }
-      })
-    })
-  }
+  window.addEventListener("scroll", animateOnScroll)
+  animateOnScroll() // Initialize on page load
 })
