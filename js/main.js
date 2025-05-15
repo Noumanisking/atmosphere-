@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Auto slide every 5 seconds
-    setInterval(nextSlide, 5000)
+    setInterval(nextSlide, 50000)
   }
 
   // Testimonial Slider
