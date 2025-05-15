@@ -28,6 +28,7 @@
   overflow: hidden;
   transition: var(--transition);
   border: 1px solid var(--card-border);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .facility-card:hover {
@@ -78,16 +79,44 @@
 
 .facility-content h3 {
   margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.facility-content h3::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
 }
 
 .facility-content p {
   color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
 }
 
 /* Equipment Showcase */
 .equipment-showcase {
   background-color: rgba(15, 15, 25, 0.5);
   text-align: center;
+  padding: 5rem 0;
+  position: relative;
+}
+
+.equipment-showcase::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80")
+    center / cover no-repeat fixed;
+  opacity: 0.1;
+  z-index: -1;
 }
 
 .equipment-brands {
@@ -107,10 +136,15 @@
   justify-content: center;
   opacity: 0.6;
   transition: var(--transition);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 10px;
 }
 
 .brand-logo:hover {
   opacity: 1;
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .brand-logo img {
@@ -127,6 +161,7 @@
 /* Virtual Tour */
 .virtual-tour {
   text-align: center;
+  padding: 5rem 0;
 }
 
 .tour-video {
@@ -150,6 +185,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.video-container:hover img {
+  transform: scale(1.05);
 }
 
 .play-button {
